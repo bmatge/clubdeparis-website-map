@@ -32,6 +32,7 @@ const TRANSLATIONS = {
     'filter.year': 'Année',
     'filter.apply': 'Appliquer',
     'filter.clear': 'Effacer les filtres',
+    'legend.label': 'Légende',
     'map.legend_creditor_permanent': 'Membre permanent',
     'map.legend_creditor_adhoc': 'Membre ad hoc',
     'map.legend_creditor_prospective': 'Membre prospectif',
@@ -117,6 +118,7 @@ const TRANSLATIONS = {
     'filter.year': 'Year',
     'filter.apply': 'Apply',
     'filter.clear': 'Clear filters',
+    'legend.label': 'Legend',
     'map.legend_creditor_permanent': 'Permanent member',
     'map.legend_creditor_adhoc': 'Ad hoc member',
     'map.legend_creditor_prospective': 'Prospective member',
@@ -296,17 +298,12 @@ class ClubParisMap extends HTMLElement {
             <input type="text" class="search-input" id="search-input" placeholder="${this._t('search.placeholder')}" autocomplete="off" />
             <div class="search-dropdown" id="search-dropdown"></div>
           </div>
-        </div>
-        <div class="bottom-bar">
-          <div class="filter-row">
-            <span class="filter-label">${this._t('filter.label')}</span>
-            <div class="filter-group">
-              <button class="filter-btn active" data-filter="all">${this._t('filter.all')}</button>
-              <button class="filter-btn filter-creditor" data-filter="créditeur">${this._t('filter.creditors')}</button>
-              <button class="filter-btn filter-debtor" data-filter="débiteur">${this._t('filter.debtors')}</button>
-            </div>
-            <div class="filter-spacer"></div>
-            <div class="legend-bar">
+          <details class="legend-panel">
+            <summary class="legend-toggle">
+              <svg class="legend-caret" viewBox="0 0 12 12" aria-hidden="true"><path d="M3 4.5L6 7.5L9 4.5" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <span>${this._t('legend.label')}</span>
+            </summary>
+            <ul class="legend-bar">
               ${[
                 ['creditor-permanent', 'map.legend_creditor_permanent'],
                 ['creditor-adhoc',     'map.legend_creditor_adhoc'],
@@ -315,14 +312,24 @@ class ClubParisMap extends HTMLElement {
                 ['debtor-encours',     'map.legend_debtor_encours'],
                 ['no-data',            'map.legend_no_data'],
               ].map(([cat, key]) => `
-                <div class="legend-item">
+                <li class="legend-item">
                   <span class="legend-swatch">
                     <svg width="100%" height="100%" viewBox="0 0 30 30" preserveAspectRatio="none" aria-hidden="true">
                       <rect width="30" height="30" fill="url(#pattern-${cat}-0)" />
                     </svg>
                   </span>
                   <span class="legend-text">${this._t(key)}</span>
-                </div>`).join('')}
+                </li>`).join('')}
+            </ul>
+          </details>
+        </div>
+        <div class="bottom-bar">
+          <div class="filter-row">
+            <span class="filter-label">${this._t('filter.label')}</span>
+            <div class="filter-group">
+              <button class="filter-btn active" data-filter="all">${this._t('filter.all')}</button>
+              <button class="filter-btn filter-creditor" data-filter="créditeur">${this._t('filter.creditors')}</button>
+              <button class="filter-btn filter-debtor" data-filter="débiteur">${this._t('filter.debtors')}</button>
             </div>
           </div>
           <!-- SLIDER TEMPORAIREMENT DÉSACTIVÉ — à réactiver quand l'historique multi-années sera réintégré
@@ -1475,7 +1482,6 @@ class ClubParisMap extends HTMLElement {
         font-size: 0.85rem; font-weight: 600; color: #1e293b;
         margin-right: 0.25rem;
       }
-      .filter-spacer { flex: 1; }
       .filter-group { display: flex; gap: 0.35rem; align-items: center; }
       .filter-btn {
         padding: 0.35rem 0.85rem; border: 1px solid #6b7280; border-radius: 6px;
@@ -1505,18 +1511,58 @@ class ClubParisMap extends HTMLElement {
         background: #1e40af; border-color: #1e40af; color: #fff;
       }
 
-      /* Render mode toggle — compact segmented control next to the legend */
-      /* Legend — charte hybride (couleur de fond + hachures/pointillés) en
-         miroir des SVG <pattern> rendus sur la carte. Les valeurs ci-dessous
-         doivent rester synchrones avec les appels mkStripes / mkDashes côté JS. */
-      .legend-bar { display: flex; gap: 0.7rem; align-items: center; flex-wrap: wrap; }
-      .legend-item { display: flex; align-items: center; gap: 0.4rem; }
-      /* Swatches : 30×30 conteneur, contenu rendu via SVG inline qui pointe
-         vers les mêmes <pattern> que la carte → cohérence visuelle parfaite
-         (même densité, même sens, même couleurs, même offset variante 0). */
+      /* Legend overlay : panneau pliable positionné en bas-gauche de la carte
+         pour économiser la largeur (la carte est souvent embarquée dans des
+         layouts étroits). Fermé par défaut, l'utilisateur l'ouvre pour
+         consulter la sémantique des motifs. */
+      .legend-panel {
+        position: absolute;
+        bottom: 12px;
+        left: 12px;
+        z-index: 5;
+        background: rgba(255,255,255,0.95);
+        border: 1px solid #cbd5e1;
+        border-radius: 6px;
+        box-shadow: 0 2px 8px rgba(15,23,42,0.08);
+        font-size: 0.78rem;
+        max-width: calc(100% - 24px);
+        color: #1e293b;
+      }
+      .legend-toggle {
+        list-style: none;
+        cursor: pointer;
+        padding: 0.4rem 0.7rem;
+        font-weight: 600;
+        display: flex;
+        align-items: center;
+        gap: 0.4rem;
+        user-select: none;
+      }
+      .legend-toggle::-webkit-details-marker { display: none; }
+      .legend-toggle::marker { display: none; }
+      .legend-caret {
+        width: 12px; height: 12px;
+        color: #64748b;
+        transition: transform 0.15s ease;
+      }
+      .legend-panel[open] .legend-caret { transform: rotate(-180deg); }
+      .legend-panel[open] .legend-toggle { border-bottom: 1px solid #e2e8f0; }
+      .legend-bar {
+        list-style: none;
+        margin: 0;
+        padding: 0.5rem 0.7rem 0.6rem;
+        display: flex;
+        flex-direction: column;
+        gap: 0.4rem;
+        max-width: 280px;
+      }
+      .legend-item { display: flex; align-items: center; gap: 0.5rem; }
+      /* Swatches : 22×22 (plus compact que les 30×30 en bandeau pleine
+         largeur). Contenu rendu via SVG inline qui pointe vers les mêmes
+         <pattern> que la carte → cohérence visuelle parfaite. */
       .legend-swatch {
         display: inline-block;
-        width: 30px; height: 30px;
+        width: 22px; height: 22px;
         border-radius: 3px;
         flex-shrink: 0;
         border: 1px solid rgba(15,23,42,0.45);
@@ -1525,7 +1571,7 @@ class ClubParisMap extends HTMLElement {
         line-height: 0;
       }
       .legend-swatch svg { display: block; width: 100%; height: 100%; }
-      .legend-text { font-size: 0.72rem; color: #475569; }
+      .legend-text { font-size: 0.72rem; color: #475569; line-height: 1.25; }
 
       /* SLIDER TEMPORAIREMENT DÉSACTIVÉ
       .year-row {
@@ -1747,7 +1793,6 @@ class ClubParisMap extends HTMLElement {
       /* ---- RESPONSIVE ---- */
       @container wrapper (max-width: 700px) {
         .filter-row { row-gap: 0.4rem; }
-        .filter-spacer { flex: 0 0 100%; height: 0; }
         .search-input { width: 160px; }
         .search-input:focus { width: 200px; }
         .panel { width: 280px; }
@@ -1768,7 +1813,6 @@ class ClubParisMap extends HTMLElement {
 
       @media (max-width: 700px) {
         .filter-row { row-gap: 0.4rem; }
-        .filter-spacer { flex: 0 0 100%; height: 0; }
         .search-input { width: 160px; }
         .panel { width: 280px; }
         /* .year-label { font-size: 0.55rem; } SLIDER DÉSACTIVÉ */
