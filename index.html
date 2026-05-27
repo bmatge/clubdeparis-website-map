@@ -38,7 +38,7 @@ const TRANSLATIONS = {
     'map.legend_debtor_accord': 'Pays débiteur ayant bénéficié d’un traitement de dette',
     'map.legend_debtor_encours': 'Pays débiteur',
     'map.legend_no_data': 'Pays sans antécédent avec le Club de Paris',
-    'map.taiwan_label': 'Taïwan (Province de Chine)',
+    'map.taiwan_prefix': 'Taïwan, ',
     'loading': 'Chargement…',
     'search.placeholder': 'Rechercher un pays…',
     'search.no_result': 'Aucun résultat',
@@ -123,7 +123,7 @@ const TRANSLATIONS = {
     'map.legend_debtor_accord': 'Debtor country that has benefited from a debt treatment',
     'map.legend_debtor_encours': 'Debtor country',
     'map.legend_no_data': 'Country with no history with the Paris Club',
-    'map.taiwan_label': 'Taiwan (Province of China)',
+    'map.taiwan_prefix': 'Taiwan, ',
     'loading': 'Loading…',
     'search.placeholder': 'Search for a country…',
     'search.no_result': 'No results',
@@ -661,11 +661,7 @@ class ClubParisMap extends HTMLElement {
 
     this._zoom = d3.zoom()
       .scaleExtent([1, 8])
-      .on('zoom', (event) => {
-        g.attr('transform', event.transform);
-        this._currentZoomK = event.transform.k;
-        if (this._updateTaiwanLabel) this._updateTaiwanLabel();
-      });
+      .on('zoom', (event) => g.attr('transform', event.transform));
     svg.call(this._zoom);
 
     const self = this;
@@ -705,16 +701,15 @@ class ClubParisMap extends HTMLElement {
         const iso = d.properties.ISO_A3;
         d3.select(this).attr('stroke', '#fff').attr('stroke-width', 1.5);
         self._showTooltip(event, iso);
-        if (self._maybeShowTaiwanLabel) self._maybeShowTaiwanLabel(event);
       })
-      .on('mousemove', function(event) {
+      .on('mousemove', function(event, d) {
+        const iso = d.properties.ISO_A3;
         self._moveTooltip(event);
-        if (self._maybeShowTaiwanLabel) self._maybeShowTaiwanLabel(event);
+        if (iso === 'CHN') self._refreshChnTooltip(event);
       })
       .on('mouseleave', function() {
         d3.select(this).attr('stroke', '#90a4ae').attr('stroke-width', 0.5);
         self._hideTooltip();
-        if (self._hideTaiwanLabel) self._hideTaiwanLabel();
       })
       .on('keydown', function(event) { self._onCountryKeydown(event); })
       .on('focus', function(event, d) {
@@ -723,39 +718,6 @@ class ClubParisMap extends HTMLElement {
       })
       .on('blur', function() { self._hideTooltip(); });
 
-    // Overlay pour Taïwan : la Banque Mondiale intègre l'île dans le polygone
-    // CHN (la couche `land` NE la dessine en blanc). Le label « Taïwan
-    // (Province de Chine) » apparaît uniquement quand la souris survole la
-    // zone géographique de l'île. Le clic dans cette zone reste sur CHN.
-    const TAIWAN_BBOX = { lonMin: 119.5, lonMax: 122.5, latMin: 21.5, latMax: 25.5 };
-    const taiwanLabel = g.append('text')
-      .attr('class', 'taiwan-label')
-      .attr('pointer-events', 'none')
-      .attr('text-anchor', 'middle')
-      .attr('dominant-baseline', 'middle')
-      .style('font-size', '10px')
-      .style('fill', '#0f172a')
-      .style('font-style', 'italic')
-      .style('opacity', 0)
-      .text(this._t('map.taiwan_label'));
-    this._updateTaiwanLabel = () => {
-      if (!this._projection) return;
-      const [x, y] = this._projection([121, 23.5]);
-      const k = this._currentZoomK ?? 1;
-      taiwanLabel.attr('transform', `translate(${x},${y}) scale(${1 / k})`);
-    };
-    this._updateTaiwanLabel();
-    this._maybeShowTaiwanLabel = (event) => {
-      if (!this._projection || !this._g) return;
-      const [px, py] = d3.pointer(event, this._g.node());
-      const geo = this._projection.invert([px, py]);
-      if (!geo) { taiwanLabel.style('opacity', 0); return; }
-      const [lon, lat] = geo;
-      const inside = lon >= TAIWAN_BBOX.lonMin && lon <= TAIWAN_BBOX.lonMax
-                  && lat >= TAIWAN_BBOX.latMin && lat <= TAIWAN_BBOX.latMax;
-      taiwanLabel.style('opacity', inside ? 1 : 0);
-    };
-    this._hideTaiwanLabel = () => taiwanLabel.style('opacity', 0);
 
     this._svg = svg;
     this._g = g;
@@ -777,7 +739,6 @@ class ClubParisMap extends HTMLElement {
     this._svg.attr('width', w).attr('height', h);
     this._g.selectAll('path.land').attr('d', this._pathGen);
     this._g.selectAll('path.country').attr('d', this._pathGen);
-    if (this._updateTaiwanLabel) this._updateTaiwanLabel();
 
     this._svg.call(this._zoom.transform, d3.zoomIdentity);
   }
@@ -810,10 +771,27 @@ class ClubParisMap extends HTMLElement {
       .attr('pointer-events', 'none');
   }
 
-  _tooltipText(iso) {
+  // Bbox géographique de Taïwan (intégré au polygone CHN par la WB). Quand
+  // la souris survole cette zone, le tooltip CHN est préfixé de « Taïwan, ».
+  static TAIWAN_BBOX = { lonMin: 119.5, lonMax: 122.5, latMin: 21.5, latMax: 25.5 };
+
+  _isInTaiwanZone(event) {
+    if (!this._projection || !this._g) return false;
+    const [px, py] = d3.pointer(event, this._g.node());
+    const geo = this._projection.invert([px, py]);
+    if (!geo) return false;
+    const [lon, lat] = geo;
+    const B = ClubParisMap.TAIWAN_BBOX;
+    return lon >= B.lonMin && lon <= B.lonMax && lat >= B.latMin && lat <= B.latMax;
+  }
+
+  _tooltipText(iso, opts = {}) {
     const yd = this._getYearData();
     const c = yd?.countries[iso];
     let text = this._isoToName(iso);
+    if (iso === 'CHN' && opts.taiwan) {
+      text = this._t('map.taiwan_prefix') + text;
+    }
     if (c) {
       if (c.debtor && c.debtor.total > 0) text += ` — ${this._t('map.debt')}: ${this._fmt(c.debtor.total)}`;
       if (c.creditor) text += ` — ${this._t('map.creditor_label')} (${c.creditor.nbAccords} ${this._t('map.agreements')})`;
@@ -823,9 +801,17 @@ class ClubParisMap extends HTMLElement {
 
   _showTooltip(event, iso) {
     const tip = this.shadowRoot.getElementById('tooltip');
-    tip.textContent = this._tooltipText(iso);
+    const taiwan = iso === 'CHN' && this._isInTaiwanZone(event);
+    tip.textContent = this._tooltipText(iso, { taiwan });
     tip.style.display = 'block';
     this._moveTooltip(event);
+  }
+
+  _refreshChnTooltip(event) {
+    const tip = this.shadowRoot.getElementById('tooltip');
+    if (!tip || tip.style.display === 'none') return;
+    const taiwan = this._isInTaiwanZone(event);
+    tip.textContent = this._tooltipText('CHN', { taiwan });
   }
 
   _showTooltipAtElement(pathEl, iso) {
