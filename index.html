@@ -1104,11 +1104,16 @@ class ClubParisMap extends HTMLElement {
   _getFill(iso) {
     const v = this._isoVariant(iso);
     const cat = this._getCategory(iso);
+    // Quand un filtre est actif, les pays qui ne matchent pas le filtre sont
+    // peints en blanc uni — pas avec le pattern "Pays sans antécédent" qui
+    // entretiendrait la confusion (un pays créancier rendu en motif "sans
+    // antécédent" quand on filtre les débiteurs n'est pas sémantiquement sans
+    // antécédent, juste hors-filtre).
     if (this._filterMode === 'créditeur' && !cat?.startsWith('creditor')) {
-      return `url(#pattern-no-data-${v})`;
+      return '#ffffff';
     }
     if (this._filterMode === 'débiteur' && !cat?.startsWith('debtor')) {
-      return `url(#pattern-no-data-${v})`;
+      return '#ffffff';
     }
     return `url(#pattern-${cat || 'no-data'}-${v})`;
   }
