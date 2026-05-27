@@ -705,13 +705,16 @@ class ClubParisMap extends HTMLElement {
         const iso = d.properties.ISO_A3;
         d3.select(this).attr('stroke', '#fff').attr('stroke-width', 1.5);
         self._showTooltip(event, iso);
+        if (self._maybeShowTaiwanLabel) self._maybeShowTaiwanLabel(event);
       })
       .on('mousemove', function(event) {
         self._moveTooltip(event);
+        if (self._maybeShowTaiwanLabel) self._maybeShowTaiwanLabel(event);
       })
       .on('mouseleave', function() {
         d3.select(this).attr('stroke', '#90a4ae').attr('stroke-width', 0.5);
         self._hideTooltip();
+        if (self._hideTaiwanLabel) self._hideTaiwanLabel();
       })
       .on('keydown', function(event) { self._onCountryKeydown(event); })
       .on('focus', function(event, d) {
@@ -720,10 +723,11 @@ class ClubParisMap extends HTMLElement {
       })
       .on('blur', function() { self._hideTooltip(); });
 
-    // Overlay statique pour Taïwan : la Banque Mondiale intègre l'île dans
-    // le polygone CHN (la couche `land` NE la dessine en blanc). On affiche
-    // le nom selon la convention FMI ("Taiwan, Province of China"), sans la
-    // rendre cliquable séparément — le clic dans la zone reste sur CHN.
+    // Overlay pour Taïwan : la Banque Mondiale intègre l'île dans le polygone
+    // CHN (la couche `land` NE la dessine en blanc). Le label « Taïwan
+    // (Province de Chine) » apparaît uniquement quand la souris survole la
+    // zone géographique de l'île. Le clic dans cette zone reste sur CHN.
+    const TAIWAN_BBOX = { lonMin: 119.5, lonMax: 122.5, latMin: 21.5, latMax: 25.5 };
     const taiwanLabel = g.append('text')
       .attr('class', 'taiwan-label')
       .attr('pointer-events', 'none')
@@ -732,6 +736,7 @@ class ClubParisMap extends HTMLElement {
       .style('font-size', '10px')
       .style('fill', '#0f172a')
       .style('font-style', 'italic')
+      .style('opacity', 0)
       .text(this._t('map.taiwan_label'));
     this._updateTaiwanLabel = () => {
       if (!this._projection) return;
@@ -740,6 +745,17 @@ class ClubParisMap extends HTMLElement {
       taiwanLabel.attr('transform', `translate(${x},${y}) scale(${1 / k})`);
     };
     this._updateTaiwanLabel();
+    this._maybeShowTaiwanLabel = (event) => {
+      if (!this._projection || !this._g) return;
+      const [px, py] = d3.pointer(event, this._g.node());
+      const geo = this._projection.invert([px, py]);
+      if (!geo) { taiwanLabel.style('opacity', 0); return; }
+      const [lon, lat] = geo;
+      const inside = lon >= TAIWAN_BBOX.lonMin && lon <= TAIWAN_BBOX.lonMax
+                  && lat >= TAIWAN_BBOX.latMin && lat <= TAIWAN_BBOX.latMax;
+      taiwanLabel.style('opacity', inside ? 1 : 0);
+    };
+    this._hideTaiwanLabel = () => taiwanLabel.style('opacity', 0);
 
     this._svg = svg;
     this._g = g;
