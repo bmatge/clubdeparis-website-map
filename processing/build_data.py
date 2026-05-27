@@ -36,11 +36,19 @@ def load_countries():
     en = {}
     with TOPOJSON.open(encoding='utf-8') as f:
         topo = json.load(f)
+    # Several features can share the same ISO_A3 after remap (e.g. FRA covers
+    # Hexagone + DROM + COM + TAAF, all dissolved to ISO=FRA). The principal
+    # polygon for an ISO is the Member State entry — prefer its NAM_0 over
+    # a Territory entry's, otherwise the country label would be overwritten
+    # by an arbitrary outlying territory ("France" → "Wallis and Futuna").
     for g in topo['objects']['countries']['geometries']:
         p = g.get('properties') or {}
         iso = p.get('ISO_A3')
-        if iso and p.get('NAM_0'):
-            en[iso] = p['NAM_0']
+        name = p.get('NAM_0')
+        if not (iso and name):
+            continue
+        if iso not in en or p.get('WB_STATUS') == 'Member State':
+            en[iso] = name
     return {
         iso: {'name_fr': fr.get(iso, en.get(iso, iso)), 'name_en': en.get(iso, iso)}
         for iso in sorted(set(fr) | set(en))
