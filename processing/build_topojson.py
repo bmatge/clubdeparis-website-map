@@ -82,13 +82,18 @@ def _fix_double_utf8(s):
         return s
 
 
-# DOM-TOM français : leurs polygones ont des ISO_A3 distincts (MTQ, GLP, GUF,
-# REU, MYT) mais la World Bank leur a explicitement donné NAM_0 = "France".
-# Sans remap, ils restent 5 polygones séparés alors que metier les considère
-# comme partie de la France : clic sur Guyane n'allume pas l'Hexagone, et
-# Guyane est classée "no-data" car FRA seul porte les données créditeur.
-# Le remap les pousse vers FRA avant dissolve → un seul MultiPolygon "France".
-DOM_TOM_FR_REMAP = {'MTQ', 'GLP', 'GUF', 'REU', 'MYT'}
+# Territoires français : leurs polygones ont des ISO_A3 distincts (5 DROM +
+# 7 COM/TAAF) mais le métier les considère comme partie intégrante de la
+# France au regard du Club de Paris. Sans remap, ce sont 12 polygones séparés
+# qui : (1) apparaissent en "pays sans antécédent" sur la carte alors que la
+# France elle-même est membre permanent, et (2) ouvrent un panel vide au clic.
+# Le remap les pousse vers FRA avant dissolve → un seul MultiPolygon "France"
+# englobant Hexagone + DROM + COM + TAAF.
+FRENCH_TERRITORIES_REMAP = {
+    'MTQ', 'GLP', 'GUF', 'REU', 'MYT',       # DROM (Martinique, Guadeloupe, Guyane, La Réunion, Mayotte)
+    'NCL', 'PYF', 'WLF',                      # COM Pacifique (N.-Calédonie, Polynésie, Wallis-et-Futuna)
+    'MAF', 'BLM', 'SPM', 'ATF',               # COM Amériques (St-Martin, St-Barth, St-Pierre-et-Miquelon) + TAAF
+}
 
 
 def prepare_geojson():
@@ -105,11 +110,11 @@ def prepare_geojson():
             if new != original:
                 props['NAM_0'] = new
                 fixed += 1
-        if props.get('ISO_A3') in DOM_TOM_FR_REMAP:
+        if props.get('ISO_A3') in FRENCH_TERRITORIES_REMAP:
             props['ISO_A3'] = 'FRA'
             remapped += 1
     print(f'  patched {fixed} NAM_0 values')
-    print(f'  remapped {remapped} DOM-TOM français à ISO_A3=FRA')
+    print(f'  remapped {remapped} territoires français à ISO_A3=FRA')
     with FIXED_GEOJSON.open('w', encoding='utf-8') as f:
         json.dump(data, f, ensure_ascii=False)
     print(f'  wrote {FIXED_GEOJSON.relative_to(ROOT)} ({FIXED_GEOJSON.stat().st_size:,} bytes)')

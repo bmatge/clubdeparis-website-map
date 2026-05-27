@@ -35,13 +35,14 @@ const TRANSLATIONS = {
     'map.legend_creditor_permanent': 'Membre permanent',
     'map.legend_creditor_adhoc': 'Membre ad hoc',
     'map.legend_creditor_prospective': 'Membre prospectif',
-    'map.legend_debtor_accord': 'Débiteur traité',
-    'map.legend_debtor_encours': 'Débiteur (encours)',
-    'map.legend_no_data': 'Pays non traité par le Club',
+    'map.legend_debtor_accord': 'Pays débiteur ayant bénéficié d’un traitement de dette',
+    'map.legend_debtor_encours': 'Pays débiteur',
+    'map.legend_no_data': 'Pays sans antécédent avec le Club de Paris',
+    'map.taiwan_label': 'Taïwan (Province de Chine)',
     'loading': 'Chargement…',
     'search.placeholder': 'Rechercher un pays…',
     'search.no_result': 'Aucun résultat',
-    'map.no_data': 'Pays n\u2019ayant jamais participé à un traitement, et non débiteur des membres du Club de Paris',
+    'map.no_data': 'Pays non débiteur du Club de Paris et n\u2019ayant jamais bénéficié d\u2019un traitement de dette de la part du Club de Paris',
     'map.debt': 'Dette',
     'map.creditor_label': 'Créancier',
     'map.agreements': 'accords',
@@ -119,13 +120,14 @@ const TRANSLATIONS = {
     'map.legend_creditor_permanent': 'Permanent member',
     'map.legend_creditor_adhoc': 'Ad hoc member',
     'map.legend_creditor_prospective': 'Prospective member',
-    'map.legend_debtor_accord': 'Treated debtor',
-    'map.legend_debtor_encours': 'Debtor (outstanding)',
-    'map.legend_no_data': 'Country not treated by the Club',
+    'map.legend_debtor_accord': 'Debtor country that has benefited from a debt treatment',
+    'map.legend_debtor_encours': 'Debtor country',
+    'map.legend_no_data': 'Country with no history with the Paris Club',
+    'map.taiwan_label': 'Taiwan (Province of China)',
     'loading': 'Loading…',
     'search.placeholder': 'Search for a country…',
     'search.no_result': 'No results',
-    'map.no_data': 'Country that has never participated in a treatment, and is not a debtor of Paris Club members',
+    'map.no_data': 'Country that is not a debtor of the Paris Club and has never benefited from a debt treatment by the Paris Club',
     'map.debt': 'Debt',
     'map.creditor_label': 'Creditor',
     'map.agreements': 'agreements',
@@ -659,19 +661,26 @@ class ClubParisMap extends HTMLElement {
 
     this._zoom = d3.zoom()
       .scaleExtent([1, 8])
-      .on('zoom', (event) => g.attr('transform', event.transform));
+      .on('zoom', (event) => {
+        g.attr('transform', event.transform);
+        this._currentZoomK = event.transform.k;
+        if (this._updateTaiwanLabel) this._updateTaiwanLabel();
+      });
     svg.call(this._zoom);
 
     const self = this;
     // Land backdrop drawn behind the country polygons. Fills gaps in disputed
-    // zones (Abyei, etc.) and around WB polygons that don't perfectly tile.
+    // zones (Sahara, Cachemire, Taïwan, Antarctique, etc.) en blanc pur sans
+    // légende : ces zones ne sont pas une catégorie sémantique du Club de Paris
+    // et ne doivent donc pas être visuellement assimilables aux pays "sans
+    // antécédent" (rendus avec le pattern no-data sur fond blanc + hachures).
     if (this._landGeojson) {
       g.selectAll('path.land')
         .data(this._landGeojson.features)
         .join('path')
         .attr('class', 'land')
         .attr('d', this._pathGen)
-        .attr('fill', 'url(#pattern-no-data-0)')
+        .attr('fill', '#ffffff')
         .attr('stroke', 'none')
         .attr('pointer-events', 'none');
     }
@@ -711,6 +720,27 @@ class ClubParisMap extends HTMLElement {
       })
       .on('blur', function() { self._hideTooltip(); });
 
+    // Overlay statique pour Taïwan : la Banque Mondiale intègre l'île dans
+    // le polygone CHN (la couche `land` NE la dessine en blanc). On affiche
+    // le nom selon la convention FMI ("Taiwan, Province of China"), sans la
+    // rendre cliquable séparément — le clic dans la zone reste sur CHN.
+    const taiwanLabel = g.append('text')
+      .attr('class', 'taiwan-label')
+      .attr('pointer-events', 'none')
+      .attr('text-anchor', 'middle')
+      .attr('dominant-baseline', 'middle')
+      .style('font-size', '10px')
+      .style('fill', '#0f172a')
+      .style('font-style', 'italic')
+      .text(this._t('map.taiwan_label'));
+    this._updateTaiwanLabel = () => {
+      if (!this._projection) return;
+      const [x, y] = this._projection([121, 23.5]);
+      const k = this._currentZoomK ?? 1;
+      taiwanLabel.attr('transform', `translate(${x},${y}) scale(${1 / k})`);
+    };
+    this._updateTaiwanLabel();
+
     this._svg = svg;
     this._g = g;
 
@@ -731,6 +761,7 @@ class ClubParisMap extends HTMLElement {
     this._svg.attr('width', w).attr('height', h);
     this._g.selectAll('path.land').attr('d', this._pathGen);
     this._g.selectAll('path.country').attr('d', this._pathGen);
+    if (this._updateTaiwanLabel) this._updateTaiwanLabel();
 
     this._svg.call(this._zoom.transform, d3.zoomIdentity);
   }
