@@ -659,12 +659,6 @@ class ClubParisMap extends HTMLElement {
       }
     }
 
-    // Selection overlay: semi-transparent cross-hatching
-    const pSel = defs.append('pattern').attr('id','pattern-selection')
-      .attr('patternUnits','userSpaceOnUse').attr('width',6).attr('height',6)
-      .attr('patternTransform','rotate(45)');
-    pSel.append('rect').attr('width',1.5).attr('height',6).attr('fill','rgba(15,23,42,0.35)');
-
     const g = svg.append('g');
 
     this._zoom = d3.zoom()
@@ -786,7 +780,7 @@ class ClubParisMap extends HTMLElement {
     // of its category pattern, plus a stronger stroke.
     this._g.append('path').attr('class', 'selection-overlay')
       .attr('d', pathD)
-      .attr('fill', 'url(#pattern-selection)')
+      .attr('fill', 'rgba(0, 0, 0, 0.15)')
       .attr('stroke', '#05243a').attr('stroke-width', 1.5 / (this._currentZoomK ?? 1))
       .attr('pointer-events', 'none');
   }
