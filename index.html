@@ -557,9 +557,16 @@ class ClubParisMap extends HTMLElement {
     this._data = await dataResp.json();
     const topo = await topoResp.json();
     this._geojson = topojson.feature(topo, topo.objects.countries);
-    this._landGeojson = topo.objects.land
-      ? topojson.feature(topo, topo.objects.land)
-      : null;
+    // Land backdrop : on dissout les pays plutôt que d'utiliser
+    // `topo.objects.land`. Les deux objets du fichier ne partagent aucun arc
+    // (land = 132 arcs très simplifiés, countries = 1668 arcs détaillés), ce
+    // qui faisait déborder le backdrop blanc dans l'océan le long des côtes
+    // découpées (fjords, Sinaï, etc.). La fusion topologique garantit que le
+    // contour land = union exacte des contours countries, au pixel près.
+    this._landGeojson = {
+      type: 'Feature',
+      geometry: topojson.merge(topo, topo.objects.countries.geometries),
+    };
     this._wbNames = {};
     for (const f of this._geojson.features) {
       const p = f.properties || {};
@@ -660,6 +667,7 @@ class ClubParisMap extends HTMLElement {
 
     this._zoom = d3.zoom()
       .scaleExtent([1, 8])
+      .translateExtent([[0, 0], [w, h]])
       .on('zoom', (event) => {
         g.attr('transform', event.transform);
         const k = event.transform.k;
@@ -679,7 +687,7 @@ class ClubParisMap extends HTMLElement {
     // antécédent" (rendus avec le pattern no-data sur fond blanc + hachures).
     if (this._landGeojson) {
       g.selectAll('path.land')
-        .data(this._landGeojson.features)
+        .data([this._landGeojson])
         .join('path')
         .attr('class', 'land')
         .attr('d', this._pathGen)
@@ -749,6 +757,7 @@ class ClubParisMap extends HTMLElement {
     this._g.selectAll('path.land').attr('d', this._pathGen);
     this._g.selectAll('path.country').attr('d', this._pathGen);
 
+    this._zoom.translateExtent([[0, 0], [w, h]]);
     this._svg.call(this._zoom.transform, d3.zoomIdentity);
   }
 
@@ -1266,7 +1275,7 @@ class ClubParisMap extends HTMLElement {
       }
       .search-input {
         padding: 0.5rem 0.65rem 0.5rem 2rem;
-        border: none; border-radius: 8px;
+        border: none; border-radius: 2px;
         font-size: 0.85rem; color: #1e293b;
         background: rgba(255,255,255,0.92);
         backdrop-filter: blur(8px);
@@ -1283,7 +1292,7 @@ class ClubParisMap extends HTMLElement {
       }
       .search-dropdown {
         position: absolute; top: 100%; left: 0; right: 0;
-        background: #fff; border-radius: 8px;
+        background: #fff; border-radius: 2px;
         box-shadow: 0 4px 16px rgba(0,0,0,.18);
         margin-top: 4px; display: none; z-index: 900;
         max-height: 220px; overflow-y: auto;
@@ -1304,7 +1313,7 @@ class ClubParisMap extends HTMLElement {
       .tooltip {
         position: absolute; display: none;
         background: rgba(30,30,30,.9); color: #fff;
-        padding: 0.45rem 0.7rem; border-radius: 6px;
+        padding: 0.45rem 0.7rem; border-radius: 2px;
         font-size: 0.82rem; pointer-events: none;
         white-space: nowrap; z-index: 500;
         box-shadow: 0 2px 8px rgba(0,0,0,.25);
@@ -1324,7 +1333,7 @@ class ClubParisMap extends HTMLElement {
       .panel-close {
         position: absolute; top: 0.75rem; right: 0.75rem;
         background: none; border: none;
-        width: 32px; height: 32px; border-radius: 50%;
+        width: 32px; height: 32px; border-radius: 2px;
         font-size: 1.4rem; color: #64748b; cursor: pointer;
         display: flex; align-items: center; justify-content: center;
         line-height: 1; z-index: 10;
@@ -1346,7 +1355,7 @@ class ClubParisMap extends HTMLElement {
       }
       .info-card:last-of-type { border-bottom: none; }
       .info-icon {
-        width: 44px; height: 44px; border-radius: 50%;
+        width: 44px; height: 44px; border-radius: 2px;
         display: flex; align-items: center; justify-content: center;
         flex-shrink: 0;
       }
@@ -1382,7 +1391,7 @@ class ClubParisMap extends HTMLElement {
       .panel-cta {
         display: block; width: 100%; text-align: center;
         margin-top: 1rem; padding: 0.75rem 1rem;
-        border: 2px solid #c2410c; border-radius: 8px;
+        border: 2px solid #c2410c; border-radius: 2px;
         color: #c2410c; font-size: 0.9rem; font-weight: 600;
         text-decoration: none; transition: all .2s;
         background: transparent;
@@ -1456,7 +1465,7 @@ class ClubParisMap extends HTMLElement {
         text-decoration: none;
         font-weight: 600;
         font-size: 0.9rem;
-        border-radius: 0 0 0.5rem 0;
+        border-radius: 0;
         z-index: 10000;
         transition: top 0.15s ease-out;
       }
@@ -1484,7 +1493,7 @@ class ClubParisMap extends HTMLElement {
       }
       .filter-group { display: flex; gap: 0.35rem; align-items: center; }
       .filter-btn {
-        padding: 0.35rem 0.85rem; border: 1px solid #6b7280; border-radius: 6px;
+        padding: 0.35rem 0.85rem; border: 1px solid #6b7280; border-radius: 2px;
         background: #fff; font-size: 0.82rem; color: #374151; cursor: pointer;
         transition: all .15s; font-family: inherit;
       }
@@ -1522,7 +1531,7 @@ class ClubParisMap extends HTMLElement {
         z-index: 5;
         background: rgba(255,255,255,0.95);
         border: 1px solid #cbd5e1;
-        border-radius: 6px;
+        border-radius: 2px;
         box-shadow: 0 2px 8px rgba(15,23,42,0.08);
         font-size: 0.78rem;
         max-width: calc(100% - 24px);
@@ -1563,7 +1572,7 @@ class ClubParisMap extends HTMLElement {
       .legend-swatch {
         display: inline-block;
         width: 22px; height: 22px;
-        border-radius: 3px;
+        border-radius: 2px;
         flex-shrink: 0;
         border: 1px solid rgba(15,23,42,0.45);
         box-sizing: border-box;
@@ -1585,12 +1594,12 @@ class ClubParisMap extends HTMLElement {
       .year-slider::-webkit-slider-thumb {
         -webkit-appearance: none; appearance: none;
         width: 18px; height: 18px; background: #ea580c;
-        border-radius: 50%; cursor: pointer;
+        border-radius: 2px; cursor: pointer;
         box-shadow: 0 2px 6px rgba(234,88,12,.3);
       }
       .year-slider::-moz-range-thumb {
         width: 18px; height: 18px; background: #ea580c;
-        border-radius: 50%; cursor: pointer; border: none;
+        border-radius: 2px; cursor: pointer; border: none;
         box-shadow: 0 2px 6px rgba(234,88,12,.3);
       }
       .year-labels {
@@ -1600,7 +1609,7 @@ class ClubParisMap extends HTMLElement {
       .year-label {
         background: none; border: none; font-size: 0.68rem;
         color: #64748b; cursor: pointer; padding: 0.15rem 0.25rem;
-        border-radius: 4px; transition: all .15s; font-family: inherit;
+        border-radius: 2px; transition: all .15s; font-family: inherit;
       }
       .year-label:hover { color: #c2410c; background: #fff7ed; }
       .year-label.active { color: #c2410c; font-weight: 700; }
@@ -1622,7 +1631,7 @@ class ClubParisMap extends HTMLElement {
         align-items: center;
         gap: 0.3rem;
         padding: 0.15rem 0.25rem;
-        border-radius: 4px;
+        border-radius: 2px;
         user-select: none;
         outline-offset: 2px;
       }
@@ -1645,7 +1654,7 @@ class ClubParisMap extends HTMLElement {
         padding: 0.6rem 0.75rem;
         background: #f8fafc;
         border: 1px solid #e2e8f0;
-        border-radius: 6px;
+        border-radius: 2px;
         font-size: 0.78rem;
         color: #475569;
         line-height: 1.55;
@@ -1707,7 +1716,7 @@ class ClubParisMap extends HTMLElement {
         width: 100%;
         padding: 0.4rem 0.6rem;
         border: 1px solid #6b7280;
-        border-radius: 6px;
+        border-radius: 2px;
         font-size: 0.8rem;
         font-family: inherit;
         color: #1e293b;
@@ -1729,7 +1738,7 @@ class ClubParisMap extends HTMLElement {
       .info-table-wrap {
         overflow-x: auto;
         border: 1px solid #e2e8f0;
-        border-radius: 6px;
+        border-radius: 2px;
         background: #fff;
       }
       table.info-table {
