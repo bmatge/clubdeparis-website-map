@@ -55,6 +55,13 @@
     box-sizing: border-box;
   }
   .club-paris-map-wrapper club-paris-map { display: block; width: 100%; height: 100vh; }
+  /* Mobile : le planisphère est horizontal — la carte adapte sa hauteur et le
+     composant prend sa hauteur de contenu (pas de bandes vides). La page
+     défile normalement. */
+  @media (max-width: 480px) {
+    .club-paris-map-wrapper { display: block; }
+    .club-paris-map-wrapper club-paris-map { height: auto; }
+  }
 </style>
 
 <!-- Reset propre à CETTE page de démonstration autonome.
@@ -640,13 +647,48 @@ class ClubParisMap extends HTMLElement {
     }
   }
 
+  // En-dessous de cette largeur de conteneur, on bascule en cadrage « mobile ».
+  // Basé sur la largeur du conteneur (et non du viewport) → cohérent avec les
+  // container-queries CSS, donc valide aussi dans une colonne étroite (Jahia).
+  static MOBILE_MAX_WIDTH = 480;
+
+  // Calcule la projection, dimensionne la zone carte, et renvoie {w, h} pour le SVG.
+  //
+  // - Large écran : la carte remplit la zone (hauteur pilotée par le flex),
+  //   projection `fitSize` — comportement historique.
+  // - Écran étroit (mobile portrait) : le planisphère est horizontal (~2.3:1).
+  //   On le cale sur la LARGEUR (`fitWidth`) et on ramène la hauteur de la zone
+  //   à la hauteur naturelle de la carte → plus de bandes d'océan vides en haut
+  //   et en bas, et AUCUNE perte est-ouest (toute l'étendue en longitude, qui
+  //   fixe l'échelle, est conservée). Le composant prend alors sa hauteur de
+  //   contenu (host en `height:auto`) pour ne pas laisser d'espace mort.
+  _fitMap(container) {
+    const w = container.clientWidth;
+    if (w <= ClubParisMap.MOBILE_MAX_WIDTH) {
+      this._projection.fitWidth(w, this._geojson);
+      const [, [, y1]] = d3.geoPath(this._projection).bounds(this._geojson);
+      const h = Math.max(1, Math.ceil(y1));
+      const hpx = h + 'px';
+      if (container.style.height !== hpx) container.style.height = hpx;
+      container.style.flexGrow = '0';
+      this.style.height = 'auto';
+      return { w, h };
+    }
+    // Réinitialiser AVANT de lire clientHeight : sinon une transition
+    // mobile→desktop lirait l'ancienne hauteur réduite.
+    container.style.height = '';
+    container.style.flexGrow = '';
+    this.style.height = '';
+    const h = container.clientHeight;
+    this._projection.fitSize([w, h], this._geojson);
+    return { w, h };
+  }
+
   _initMap() {
     const container = this.shadowRoot.getElementById('map-area');
-    const w = container.clientWidth;
-    const h = container.clientHeight;
 
-    this._projection = d3.geoEqualEarth()
-      .fitSize([w, h], this._geojson);
+    this._projection = d3.geoEqualEarth();
+    const { w, h } = this._fitMap(container);
 
     this._pathGen = d3.geoPath().projection(this._projection);
 
@@ -806,11 +848,9 @@ class ClubParisMap extends HTMLElement {
   _onResize() {
     const container = this.shadowRoot.getElementById('map-area');
     if (!container || !this._svg) return;
-    const w = container.clientWidth;
-    const h = container.clientHeight;
-    if (w < 1 || h < 1) return;
+    if (container.clientWidth < 1) return;
 
-    this._projection.fitSize([w, h], this._geojson);
+    const { w, h } = this._fitMap(container);
     this._pathGen = d3.geoPath().projection(this._projection);
 
     this._svg.attr('width', w).attr('height', h);
@@ -1901,7 +1941,15 @@ class ClubParisMap extends HTMLElement {
         .filter-btn { padding: 0.25rem 0.55rem; font-size: 0.75rem; }
         .search-input { width: 140px; }
         .search-input:focus { width: 180px; }
-        .panel { width: 100%; max-width: 100%; }
+        /* Panneau pays = feuille plein écran scrollable (découplé de la hauteur
+           de la carte, qui est réduite sur mobile). */
+        .panel {
+          position: fixed; inset: 0;
+          width: 100%; max-width: none;
+          border-radius: 0;
+          transform: translateY(100%);
+        }
+        .panel.open { transform: translateY(0); }
         .panel-title { font-size: 1.2rem; }
         .info-value { font-size: 0.95rem; }
         /* .year-label { font-size: 0.5rem; padding: 0.1rem 0.1rem; } SLIDER DÉSACTIVÉ */
@@ -1918,7 +1966,13 @@ class ClubParisMap extends HTMLElement {
         .filter-label { font-size: 0.78rem; }
         .filter-btn { padding: 0.25rem 0.55rem; font-size: 0.75rem; }
         .search-input { width: 140px; }
-        .panel { width: 100%; max-width: 100%; }
+        .panel {
+          position: fixed; inset: 0;
+          width: 100%; max-width: none;
+          border-radius: 0;
+          transform: translateY(100%);
+        }
+        .panel.open { transform: translateY(0); }
         .panel-title { font-size: 1.2rem; }
         .info-value { font-size: 0.95rem; }
         /* .year-label { font-size: 0.5rem; padding: 0.1rem 0.1rem; } SLIDER DÉSACTIVÉ */
