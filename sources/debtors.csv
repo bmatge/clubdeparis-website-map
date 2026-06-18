@@ -2,21 +2,21 @@ year,iso,source_label,apd_usd,napd_usd,type
 2025,AFG,Afghanistan,25027500,1590096820,accord
 2025,AGO,Angola,728650631.3,1576721886,accord
 2025,ALB,Albanie,881861241.7,60143826.99,accord
-2025,ARE,Emirats arabes unis,-,1900168960,encours
+2025,ARE,Emirats arabes unis,,1900168960,encours
 2025,ARG,Argentine,266188063.1,806530106.3,accord
 2025,ARM,Arménie,911624887.8,68265451.6,encours
-2025,ATG,Antigua-et-Barbuda,3762772.95,137916362.2,accord
+2025,ATG,AntiguaetBarbuda,3762772.95,137916362.2,accord
 2025,AZE,Azerbaïdjan,778520609.2,65478436.34,encours
 2025,BEN,Bénin,505819181.9,420038692.3,accord
 2025,BFA,Burkina Faso,354970617.6,25512923.93,accord
 2025,BGD,Bangladesh,15182360556,9972940277,encours
-2025,BGR,Bulgarie,46616527.35,-,accord
-2025,BHR,Bahrein,-,22450000,encours
-2025,BIH,Bosnie-Herzégovine,169005471.8,214217459.9,accord
+2025,BGR,Bulgarie,46616527.35,,accord
+2025,BHR,Bahrein,,22450000,encours
+2025,BIH,BosnieHerzégovine,169005471.8,214217459.9,accord
 2025,BLR,Biélorussie,7467860.81,9199521754,encours
 2025,BOL,Bolivie,946940342.2,7940000,accord
-2025,BRB,Barbade,29375000,-,encours
-2025,BWA,Botswana,115346705.1,-,encours
+2025,BRB,Barbade,29375000,,encours
+2025,BWA,Botswana,115346705.1,,encours
 2025,CAF,République centrafricaine,17625000,1027625.08,accord
 2025,CHL,Chili,31196250,6756781,accord
 2025,CHN,Chine,7180676016,472017668.8,encours
@@ -25,94 +25,94 @@ year,iso,source_label,apd_usd,napd_usd,type
 2025,COD,Congo. République démocratique du,77448981.39,8612750,accord
 2025,COG,Congo. République du,259616447,280930988.1,accord
 2025,COL,Colombie,5010592419,97938067.79,encours
-2025,COM,Comores,-,2131547.18,accord
+2025,COM,Comores,,2131547.18,accord
 2025,CPV,Cap Vert,120623163,50759439.68,accord
 2025,CRI,Costa Rica,586314436.6,40051129.1,accord
 2025,CUB,Cuba,300808990.1,4494667115,encours
-2025,CZE,République tchèque,-,19223000,encours
+2025,CZE,République tchèque,,19223000,encours
 2025,DJI,Djibouti,66058100.86,3400224.96,accord
 2025,DMA,Dominique,6465955.02,90000,accord
 2025,DOM,République dominicaine,1689346739,121497133.7,accord
 2025,DZA,Algérie,62674856.78,3292643.03,accord
 2025,ECU,Equateur,1609466229,201461420.8,accord
 2025,EGY,Egypte,7354992772,7469433953,accord
-2025,ERI,Erythrée,92774677.46,-,encours
+2025,ERI,Erythrée,92774677.46,,encours
 2025,ETH,Ethiopie,1203866465,749396069.6,accord
 2025,FJI,Fidji,154548560.5,36740000,accord
 2025,GAB,Gabon,501237414.6,458519355.4,accord
-2025,GEO,Gambie,464125,-,accord
+2025,GEO,Gambie,464125,,accord
 2025,GHA,Géorgie,1491778887,98070397.56,accord
 2025,GIN,Guinée,233987061.4,257548137.9,accord
 2025,GMB,Ghana,1189630940,2661778058,accord
-2025,GNB,Guinée-Bissau,-,25210000,accord
-2025,GNQ,Guinée équatoriale,-,79161640.81,accord
-2025,GRC,Grèce,-,24145414610,encours
+2025,GNB,GuinéeBissau,,25210000,accord
+2025,GNQ,Guinée équatoriale,,79161640.81,accord
+2025,GRC,Grèce,,24145414610,encours
 2025,GRD,Grenade,1809500,1627897.13,accord
-2025,GTM,Guatemala,173006598,-,accord
+2025,GTM,Guatemala,173006598,,accord
 2025,GUY,Guyana,71598572.86,117510000,accord
 2025,HND,Honduras,412319041.3,1816752.93,accord
-2025,HRV,Croatie,3057004.71,-,accord
-2025,HUN,Hongrie,-,674628600,encours
+2025,HRV,Croatie,3057004.71,,accord
+2025,HUN,Hongrie,,674628600,encours
 2025,IDN,Indonésie,14056759122,1372544880,accord
 2025,IND,Inde,31911849404,6810257147,encours
-2025,IRN,Iran,-,54290572.64,encours
+2025,IRN,Iran,,54290572.64,encours
 2025,IRQ,Irak,6278348700,1888803327,accord
 2025,JAM,Jamaïque,15140090.79,2381438.79,accord
 2025,JOR,Jordanie,4021127962,40612467.59,accord
-2025,KAZ,Kazakhstan,136670099.8,-,encours
+2025,KAZ,Kazakhstan,136670099.8,,encours
 2025,KEN,Kenya,2771395323,288995532.4,accord
 2025,KGZ,Kirghizstan,222133958,3813182.46,accord
 2025,KHM,Cambodge,3179629128,1417056928,accord
-2025,KNA,Saint-Christophe-et-Niévès,1275085.09,-,accord
+2025,KNA,SaintChristopheetNiévès,1275085.09,,accord
 2025,LAO,Laos,498052606.5,187279971.6,encours
-2025,LBN,Liban,142877470.5,-,encours
-2025,LBR,Libéria,-,28768597.77,accord
-2025,LBY,Libye,-,4841592046,encours
-2025,LCA,Sainte-Lucie,326457.9,-,accord
+2025,LBN,Liban,142877470.5,,encours
+2025,LBR,Libéria,,28768597.77,accord
+2025,LBY,Libye,,4841592046,encours
+2025,LCA,SainteLucie,326457.9,,accord
 2025,LKA,Sri Lanka,3455164982,1458604746,accord
-2025,LSO,Lesotho,2229475.51,-,accord
+2025,LSO,Lesotho,2229475.51,,accord
 2025,MAR,Maroc,7645495248,611399949.7,accord
 2025,MDA,Moldavie,467601966.2,14596515.91,accord
 2025,MDG,Madagascar,434766203.4,30079288.27,accord
-2025,MDV,Maldives,43106994.26,-,accord
+2025,MDV,Maldives,43106994.26,,accord
 2025,MEX,Mexique,2788548716,470000,accord
-2025,MKD,Macédoine du Nord,176347176,-,accord
+2025,MKD,Macédoine du Nord,176347176,,accord
 2025,MLI,Mali,296644487.8,42909106.72,accord
 2025,MMR,Myanmar,4247503100,839252214.6,accord
 2025,MNE,Monténégro,123625826.1,31550656.63,accord
-2025,MNG,Mongolie,1417609487,-,encours
+2025,MNG,Mongolie,1417609487,,encours
 2025,MOZ,Mozambique,874898256.9,302620600.5,accord
 2025,MRT,Mauritanie,76914958.73,49180000,accord
-2025,MUS,Maurice,785501593.9,-,encours
-2025,MWI,Malawi,818975,-,accord
+2025,MUS,Maurice,785501593.9,,encours
+2025,MWI,Malawi,818975,,accord
 2025,MYS,Malaisie,909121022.3,9646401.78,encours
 2025,NAM,Namibie,293782517.3,18234257.66,encours
-2025,NER,Niger,257716169.3,-,accord
+2025,NER,Niger,257716169.3,,accord
 2025,NGA,Nigeria,1206116141,49526250.01,accord
 2025,NIC,Nicaragua,379142039.1,26787714.5,accord
-2025,NPL,Népal,443058482.6,-,accord
-2025,OMN,Oman,-,15290000,encours
+2025,NPL,Népal,443058482.6,,accord
+2025,OMN,Oman,,15290000,encours
 2025,PAK,Pakistan,5496891552,215617609.1,accord
 2025,PAN,Panama,614719781.6,457676112,accord
 2025,PER,Pérou,1646498263,67503747.35,accord
-2025,PHL,Philippines,10946345743,-,accord
-2025,PLW,Palau,-,5134204,encours
-2025,PNG,Papouasie-Nouvelle-Guinée,441515290.6,1953088327,accord
+2025,PHL,Philippines,10946345743,,accord
+2025,PLW,Palau,,5134204,encours
+2025,PNG,PapouasieNouvelleGuinée,441515290.6,1953088327,accord
 2025,POL,Pologne,2309604211,4547144181,accord
 2025,PRK,Corée. République populaire démocratique de ,53385860.52,2019142839,encours
 2025,PRY,Paraguay,282351903.1,29257500,encours
-2025,ROU,Roumanie,334812684,-,accord
+2025,ROU,Roumanie,334812684,,accord
 2025,RWA,Rwanda,657182513.3,7378862.08,encours
-2025,SAU,Arabie Saoudite,-,372178671.5,encours
+2025,SAU,Arabie Saoudite,,372178671.5,encours
 2025,SDN,Soudan,1347550449,3227294046,accord
 2025,SEN,Sénégal,2141823785,1191372788,accord
-2025,SLE,Sierra Leone,43004823.33,-,accord
+2025,SLE,Sierra Leone,43004823.33,,accord
 2025,SLV,Salvador,454511768.3,110000,accord
 2025,SOM,Somalie,41334018.82,5418024.32,accord
 2025,SRB,Serbie,1099676858,872611935.2,accord
-2025,STP,Sao Tomé-et-Principe,905925,18070000,accord
+2025,STP,Sao ToméetPrincipe,905925,18070000,accord
 2025,SUR,Suriname,30717330.36,46290274.37,accord
-2025,SVK,Slovaquie,976007.68,-,encours
+2025,SVK,Slovaquie,976007.68,,encours
 2025,SWZ,Eswatini,19258797.18,473000,encours
 2025,SYC,Seychelles,19556122.02,7889024.46,accord
 2025,SYR,Syrie,889493803.1,249288000,encours
@@ -121,8 +121,8 @@ year,iso,source_label,apd_usd,napd_usd,type
 2025,THA,Thaïlande,1630401539,106281874.9,encours
 2025,TJK,Tadjikistan,39362499.98,292429127.5,accord
 2025,TKM,Turkménistan,2794881.64,673389213,encours
-2025,TLS,Timor-Leste,22050479.85,-,encours
-2025,TTO,Trinité-et-Tobago,-,121524593,accord
+2025,TLS,TimorLeste,22050479.85,,encours
+2025,TTO,TrinitéetTobago,,121524593,accord
 2025,TUN,Tunisie,3796373207,28056658.28,encours
 2025,TUR,Turquie,4003783543,1408778275,accord
 2025,TZA,Tanzanie,1539618090,365241800.9,accord
@@ -130,12 +130,12 @@ year,iso,source_label,apd_usd,napd_usd,type
 2025,UKR,Ukraine,8413381927,4143856312,accord
 2025,URY,Uruguay,28769364.9,88705.59,encours
 2025,UZB,Ouzbékistan,4259672099,1427717274,encours
-2025,VCT,Saint-Vincent-et-les-Grenadines,175458.16,1290000,accord
+2025,VCT,SaintVincentetlesGrenadines,175458.16,1290000,accord
 2025,VEN,Venezuela,67170535.56,8860144067,encours
 2025,VNM,Vietnam,12471554298,669304425,accord
-2025,VUT,Vanuatu,36697696.74,-,encours
-2025,WSM,Samoa,15777297.49,-,accord
-2025,XKX,Kosovo,11663050,-,encours
+2025,VUT,Vanuatu,36697696.74,,encours
+2025,WSM,Samoa,15777297.49,,accord
+2025,XKX,Kosovo,11663050,,encours
 2025,YEM,Yémen,432395320.9,1281613622,accord
 2025,ZAF,Afrique du Sud,2930104951,138939077.8,encours
 2025,ZMB,Zambie,191080522.8,1581573289,accord
