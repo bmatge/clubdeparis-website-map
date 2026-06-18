@@ -1,42 +1,42 @@
 {
-  "2024": {
+  "2025": {
     "countries": {
       "AFG": {
         "country": "Afghanistan",
         "debtor": {
-          "apd": 22137090,
-          "napd": 1560934016.94,
-          "total": 1583071106.94,
+          "apd": 25027500,
+          "napd": 1590096820,
+          "total": 1615124320,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/afghanistan.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/afghanistan.html"
         }
       },
       "AGO": {
         "country": "Angola",
         "debtor": {
-          "apd": 590588658.29,
-          "napd": 1387608988.05,
-          "total": 1978197646.34,
+          "apd": 728650631.3,
+          "napd": 1576721886,
+          "total": 2305372517.3,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/angola.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/angola.html"
         }
       },
       "ALB": {
         "country": "Albanie",
         "debtor": {
-          "apd": 814917367.08,
-          "napd": 53334838.69,
-          "total": 868252205.77,
+          "apd": 881861241.7,
+          "napd": 60143826.99,
+          "total": 942005068.69,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/albanie.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/albanie.html"
         }
       },
       "ARE": {
         "country": "Émirats arabes unis",
         "debtor": {
           "apd": 0,
-          "napd": 1987000000,
-          "total": 1987000000,
+          "napd": 1900168960,
+          "total": 1900168960,
           "type": "encours",
           "url": null
         },
@@ -44,25 +44,31 @@
           "nbAccords": 2,
           "statut": "Ad hoc",
           "premiereParticipation": 1979,
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par-pays-crediteurs/emirats-arabes-unis.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-creanciers/par-pays-crediteurs/emirats-arabes-unis.html"
         }
       },
       "ARG": {
         "country": "Argentine",
         "debtor": {
-          "apd": 246046680.19,
-          "napd": 1098830615.63,
-          "total": 1344877295.82,
+          "apd": 266188063.1,
+          "napd": 806530106.3,
+          "total": 1072718169.4,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/argentine.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/argentine.html"
+        },
+        "creditor": {
+          "nbAccords": 1,
+          "statut": "Ad hoc",
+          "premiereParticipation": 1983,
+          "url": null
         }
       },
       "ARM": {
         "country": "Arménie",
         "debtor": {
-          "apd": 699000000,
-          "napd": 85000000,
-          "total": 784000000,
+          "apd": 911624887.8,
+          "napd": 68265451.6,
+          "total": 979890339.4,
           "type": "encours",
           "url": null
         }
@@ -70,19 +76,19 @@
       "ATG": {
         "country": "Antigua-et-Barbuda",
         "debtor": {
-          "apd": 3800000,
-          "napd": 143588165.85,
-          "total": 147388165.85,
+          "apd": 3762772.95,
+          "napd": 137916362.2,
+          "total": 141679135.15,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/antigua-et-barbuda.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/antigua-et-barbuda.html"
         }
       },
       "AZE": {
         "country": "Azerbaïdjan",
         "debtor": {
-          "apd": 779000000,
-          "napd": 88000000,
-          "total": 867000000,
+          "apd": 778520609.2,
+          "napd": 65478436.34,
+          "total": 843999045.54,
           "type": "encours",
           "url": null
         }
@@ -90,29 +96,29 @@
       "BEN": {
         "country": "Bénin",
         "debtor": {
-          "apd": 340808881.87,
-          "napd": 412148026.87,
-          "total": 752956908.74,
+          "apd": 505819181.9,
+          "napd": 420038692.3,
+          "total": 925857874.2,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/benin.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/benin.html"
         }
       },
       "BFA": {
         "country": "Burkina Faso",
         "debtor": {
-          "apd": 334749590.81,
-          "napd": 51552890.7,
-          "total": 386302481.51,
+          "apd": 354970617.6,
+          "napd": 25512923.93,
+          "total": 380483541.53,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/burkina-faso.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/burkina-faso.html"
         }
       },
       "BGD": {
         "country": "Bangladesh",
         "debtor": {
-          "apd": 13689000000,
-          "napd": 9323000000,
-          "total": 23012000000,
+          "apd": 15182360556,
+          "napd": 9972940277,
+          "total": 25155300833,
           "type": "encours",
           "url": null
         }
@@ -120,19 +126,19 @@
       "BGR": {
         "country": "Bulgarie",
         "debtor": {
-          "apd": 56364138.06,
+          "apd": 46616527.35,
           "napd": 0,
-          "total": 56364138.06,
+          "total": 46616527.35,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/bulgarie.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/bulgarie.html"
         }
       },
       "BHR": {
         "country": "Bahreïn",
         "debtor": {
           "apd": 0,
-          "napd": 23000000,
-          "total": 23000000,
+          "napd": 22450000,
+          "total": 22450000,
           "type": "encours",
           "url": null
         }
@@ -140,19 +146,19 @@
       "BIH": {
         "country": "Bosnie-Herzégovine",
         "debtor": {
-          "apd": 189370330.56,
-          "napd": 216060431.82,
-          "total": 405430762.38,
+          "apd": 169005471.8,
+          "napd": 214217459.9,
+          "total": 383222931.7,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/bosnie-herzegovine.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/bosnie-herzegovine.html"
         }
       },
       "BLR": {
         "country": "Biélorussie",
         "debtor": {
-          "apd": 7000000,
-          "napd": 8929000000,
-          "total": 8936000000,
+          "apd": 7467860.81,
+          "napd": 9199521754,
+          "total": 9206989614.81,
           "type": "encours",
           "url": null
         }
@@ -160,19 +166,19 @@
       "BOL": {
         "country": "Bolivie",
         "debtor": {
-          "apd": 849258924.09,
-          "napd": 2317639,
-          "total": 851576563.09,
+          "apd": 946940342.2,
+          "napd": 7940000,
+          "total": 954880342.2,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/bolivie.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/bolivie.html"
         }
       },
       "BRB": {
         "country": "Barbade",
         "debtor": {
-          "apd": 26000000,
+          "apd": 29375000,
           "napd": 0,
-          "total": 26000000,
+          "total": 29375000,
           "type": "encours",
           "url": null
         }
@@ -180,9 +186,9 @@
       "BWA": {
         "country": "Botswana",
         "debtor": {
-          "apd": 117000000,
+          "apd": 115346705.1,
           "napd": 0,
-          "total": 117000000,
+          "total": 115346705.1,
           "type": "encours",
           "url": null
         }
@@ -190,85 +196,85 @@
       "CAF": {
         "country": "République centrafricaine",
         "debtor": {
-          "apd": 0,
-          "napd": 1018273.13,
-          "total": 1018273.13,
+          "apd": 17625000,
+          "napd": 1027625.08,
+          "total": 18652625.08,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/centrafrique.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/centrafrique.html"
         }
       },
       "CHL": {
         "country": "Chili",
         "debtor": {
-          "apd": 34639869,
-          "napd": 9438029.46,
-          "total": 44077898.46,
+          "apd": 31196250,
+          "napd": 6756781,
+          "total": 37953031,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/chili.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/chili.html"
         }
       },
       "CHN": {
         "country": "République populaire de Chine",
         "debtor": {
-          "apd": 7471000000,
-          "napd": 494000000,
-          "total": 7965000000,
+          "apd": 7180676016,
+          "napd": 472017668.8,
+          "total": 7652693684.8,
           "type": "encours",
           "url": null
         },
         "creditor": {
-          "nbAccords": 3,
-          "statut": "Ad hoc",
+          "nbAccords": 4,
+          "statut": null,
           "premiereParticipation": 2022,
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par-pays-crediteurs/chine.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-creanciers/par-pays-crediteurs/chine.html"
         }
       },
       "CIV": {
         "country": "Côte d'Ivoire",
         "debtor": {
-          "apd": 1643767172.78,
-          "napd": 744528403.52,
-          "total": 2388295576.3,
+          "apd": 2163306059,
+          "napd": 981771289.2,
+          "total": 3145077348.2,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/cote-d-ivoire.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/cote-d-ivoire.html"
         }
       },
       "CMR": {
         "country": "Cameroun",
         "debtor": {
-          "apd": 1286724645.32,
-          "napd": 105072843.93,
-          "total": 1391797489.25,
+          "apd": 1323672529,
+          "napd": 132941802.3,
+          "total": 1456614331.3,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/cameroun.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/cameroun.html"
         }
       },
       "COD": {
         "country": "République démocratique du Congo",
         "debtor": {
-          "apd": 57324432.02,
-          "napd": 0,
-          "total": 57324432.02,
+          "apd": 77448981.39,
+          "napd": 8612750,
+          "total": 86061731.39,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/rd-congo.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/democratic-republic-of-congo.html"
         }
       },
       "COG": {
         "country": "République du Congo",
         "debtor": {
-          "apd": 222768402.27,
-          "napd": 278956498.34,
-          "total": 501724900.61,
+          "apd": 259616447,
+          "napd": 280930988.1,
+          "total": 540547435.1,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/congo.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/congo.html"
         }
       },
       "COL": {
         "country": "Colombie",
         "debtor": {
-          "apd": 4307000000,
-          "napd": 85000000,
-          "total": 4392000000,
+          "apd": 5010592419,
+          "napd": 97938067.79,
+          "total": 5108530486.79,
           "type": "encours",
           "url": null
         }
@@ -277,38 +283,38 @@
         "country": "Comores",
         "debtor": {
           "apd": 0,
-          "napd": 2070337.42,
-          "total": 2070337.42,
+          "napd": 2131547.18,
+          "total": 2131547.18,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/comores.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/comores.html"
         }
       },
       "CPV": {
         "country": "Cap Vert",
         "debtor": {
-          "apd": 121036804.56,
-          "napd": 49675364.87,
-          "total": 170712169.43,
+          "apd": 120623163,
+          "napd": 50759439.68,
+          "total": 171382602.68,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/cap-vert.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/cap-vert.html"
         }
       },
       "CRI": {
         "country": "Costa Rica",
         "debtor": {
-          "apd": 521081583.81,
-          "napd": 40163405.61,
-          "total": 561244989.42,
+          "apd": 586314436.6,
+          "napd": 40051129.1,
+          "total": 626365565.7,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/costa-rica.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/costa-rica.html"
         }
       },
       "CUB": {
         "country": "Cuba",
         "debtor": {
-          "apd": 253000000,
-          "napd": 4371000000,
-          "total": 4624000000,
+          "apd": 300808990.1,
+          "napd": 4494667115,
+          "total": 4795476105.1,
           "type": "encours",
           "url": null
         }
@@ -317,8 +323,8 @@
         "country": "République tchèque",
         "debtor": {
           "apd": 0,
-          "napd": 17000000,
-          "total": 17000000,
+          "napd": 19223000,
+          "total": 19223000,
           "type": "encours",
           "url": null
         },
@@ -326,75 +332,75 @@
           "nbAccords": 1,
           "statut": "Ad hoc",
           "premiereParticipation": 2024,
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par-pays-crediteurs/republique-tcheque.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-creanciers/par-pays-crediteurs/republique-tcheque.html"
         }
       },
       "DJI": {
         "country": "Djibouti",
         "debtor": {
-          "apd": 63286599.79,
-          "napd": 3109499.2,
-          "total": 66396098.99,
+          "apd": 66058100.86,
+          "napd": 3400224.96,
+          "total": 69458325.82,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/djibouti.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/djibouti.html"
         }
       },
       "DMA": {
         "country": "Dominique",
         "debtor": {
-          "apd": 8749825.82,
-          "napd": 1010000,
-          "total": 9759825.82,
+          "apd": 6465955.02,
+          "napd": 90000,
+          "total": 6555955.02,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/dominique.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/dominique.html"
         }
       },
       "DOM": {
         "country": "République dominicaine",
         "debtor": {
-          "apd": 1647642173.33,
-          "napd": 121586691.9,
-          "total": 1769228865.23,
+          "apd": 1689346739,
+          "napd": 121497133.7,
+          "total": 1810843872.7,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/republique-dominicaine.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/republique-dominicaine.html"
         }
       },
       "DZA": {
         "country": "Algérie",
         "debtor": {
-          "apd": 64756417.68,
-          "napd": 1580355.18,
-          "total": 66336772.86,
+          "apd": 62674856.78,
+          "napd": 3292643.03,
+          "total": 65967499.81,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/algerie.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/algerie.html"
         }
       },
       "ECU": {
         "country": "Équateur",
         "debtor": {
-          "apd": 1505709678.6,
-          "napd": 211516674.98,
-          "total": 1717226353.58,
+          "apd": 1609466229,
+          "napd": 201461420.8,
+          "total": 1810927649.8,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/equateur.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/equateur.html"
         }
       },
       "EGY": {
         "country": "Égypte",
         "debtor": {
-          "apd": 6892930436.72,
-          "napd": 4984791985.92,
-          "total": 11877722422.64,
+          "apd": 7354992772,
+          "napd": 7469433953,
+          "total": 14824426725,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/egypte.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/egypte.html"
         }
       },
       "ERI": {
         "country": "Érythrée",
         "debtor": {
-          "apd": 86000000,
+          "apd": 92774677.46,
           "napd": 0,
-          "total": 86000000,
+          "total": 92774677.46,
           "type": "encours",
           "url": null
         }
@@ -402,99 +408,99 @@
       "ETH": {
         "country": "Éthiopie",
         "debtor": {
-          "apd": 1007644571.01,
-          "napd": 738476563.45,
-          "total": 1746121134.46,
+          "apd": 1203866465,
+          "napd": 749396069.6,
+          "total": 1953262534.6,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/ethiopie.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/ethiopie.html"
         }
       },
       "FJI": {
         "country": "Fidji",
         "debtor": {
-          "apd": 159835748.48,
+          "apd": 154548560.5,
           "napd": 36740000,
-          "total": 196575748.48,
+          "total": 191288560.5,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/fidji.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/fidji.html"
         }
       },
       "GAB": {
         "country": "Gabon",
         "debtor": {
-          "apd": 457106429.71,
-          "napd": 214224265.92,
-          "total": 671330695.63,
+          "apd": 501237414.6,
+          "napd": 458519355.4,
+          "total": 959756770,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/gabon.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/gabon.html"
         }
       },
       "GEO": {
         "country": "Géorgie",
         "debtor": {
-          "apd": 1373435673.04,
-          "napd": 89709202.95,
-          "total": 1463144875.99,
+          "apd": 464125,
+          "napd": 0,
+          "total": 464125,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/georgie.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/georgie.html"
         }
       },
       "GHA": {
         "country": "Ghana",
         "debtor": {
-          "apd": 1078650753.5,
-          "napd": 2377445172.5,
-          "total": 3456095926,
+          "apd": 1491778887,
+          "napd": 98070397.56,
+          "total": 1589849284.56,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/ghana.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/ghana.html"
         }
       },
       "GIN": {
         "country": "Guinée",
         "debtor": {
-          "apd": 205316902.88,
-          "napd": 199566202.98,
-          "total": 404883105.86,
+          "apd": 233987061.4,
+          "napd": 257548137.9,
+          "total": 491535199.3,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/guinee.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/guinee.html"
         }
       },
       "GMB": {
         "country": "Gambie",
         "debtor": {
-          "apd": 410523.5,
-          "napd": 0,
-          "total": 410523.5,
+          "apd": 1189630940,
+          "napd": 2661778058,
+          "total": 3851408998,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/gambie.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/gambie.html"
         }
       },
       "GNB": {
         "country": "Guinée-Bissau",
         "debtor": {
           "apd": 0,
-          "napd": 26169090,
-          "total": 26169090,
+          "napd": 25210000,
+          "total": 25210000,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/guinee-bissau.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/guinee-bissau.html"
         }
       },
       "GNQ": {
         "country": "Guinée équatoriale",
         "debtor": {
           "apd": 0,
-          "napd": 51190453.27,
-          "total": 51190453.27,
+          "napd": 79161640.81,
+          "total": 79161640.81,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/guinee-equatoriale.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/guinee-equatoriale.html"
         }
       },
       "GRC": {
         "country": "Grèce",
         "debtor": {
           "apd": 0,
-          "napd": 31883000000,
-          "total": 31883000000,
+          "napd": 24145414610,
+          "total": 24145414610,
           "type": "encours",
           "url": null
         }
@@ -502,59 +508,59 @@
       "GRD": {
         "country": "Grenade",
         "debtor": {
-          "apd": 1948069.37,
-          "napd": 1840000,
-          "total": 3788069.37,
+          "apd": 1809500,
+          "napd": 1627897.13,
+          "total": 3437397.13,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/grenade.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/grenade.html"
         }
       },
       "GTM": {
         "country": "Guatémala",
         "debtor": {
-          "apd": 167768132.29,
+          "apd": 173006598,
           "napd": 0,
-          "total": 167768132.29,
+          "total": 173006598,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/guatemala.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/guatemala.html"
         }
       },
       "GUY": {
         "country": "Guyana",
         "debtor": {
-          "apd": 85130016.53,
-          "napd": 72820000,
-          "total": 157950016.53,
+          "apd": 71598572.86,
+          "napd": 117510000,
+          "total": 189108572.86,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/guyana.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/guyana.html"
         }
       },
       "HND": {
         "country": "Honduras",
         "debtor": {
-          "apd": 389244403.83,
-          "napd": 1584311.15,
-          "total": 390828714.98,
+          "apd": 412319041.3,
+          "napd": 1816752.93,
+          "total": 414135794.23,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/honduras.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/honduras.html"
         }
       },
       "HRV": {
         "country": "Croatie",
         "debtor": {
-          "apd": 4680959.79,
+          "apd": 3057004.71,
           "napd": 0,
-          "total": 4680959.79,
+          "total": 3057004.71,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/croatie.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/croatie.html"
         }
       },
       "HUN": {
         "country": "Hongrie",
         "debtor": {
           "apd": 0,
-          "napd": 254000000,
-          "total": 254000000,
+          "napd": 674628600,
+          "total": 674628600,
           "type": "encours",
           "url": null
         },
@@ -562,41 +568,41 @@
           "nbAccords": 1,
           "statut": "Ad hoc",
           "premiereParticipation": 2024,
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par-pays-crediteurs/hongrie.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-creanciers/par-pays-crediteurs/hongrie.html"
         }
       },
       "IDN": {
         "country": "Indonésie",
         "debtor": {
-          "apd": 13732992180.8,
-          "napd": 1352387262.57,
-          "total": 15085379443.37,
+          "apd": 14056759122,
+          "napd": 1372544880,
+          "total": 15429304002,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/indonesie.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/indonesie.html"
         }
       },
       "IND": {
         "country": "Inde",
         "debtor": {
-          "apd": 28271000000,
-          "napd": 6179000000,
-          "total": 34450000000,
+          "apd": 31911849404,
+          "napd": 6810257147,
+          "total": 38722106551,
           "type": "encours",
           "url": null
         },
         "creditor": {
-          "nbAccords": 4,
+          "nbAccords": 5,
           "statut": "Ad hoc",
-          "premiereParticipation": 1922,
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par-pays-crediteurs/inde.html"
+          "premiereParticipation": 2022,
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-creanciers/par-pays-crediteurs/inde.html"
         }
       },
       "IRN": {
         "country": "Iran",
         "debtor": {
-          "apd": 3000000,
-          "napd": 48000000,
-          "total": 51000000,
+          "apd": 0,
+          "napd": 54290572.64,
+          "total": 54290572.64,
           "type": "encours",
           "url": null
         }
@@ -604,39 +610,39 @@
       "IRQ": {
         "country": "Irak",
         "debtor": {
-          "apd": 5906932515.01,
-          "napd": 2439161150.7,
-          "total": 8346093665.71,
+          "apd": 6278348700,
+          "napd": 1888803327,
+          "total": 8167152027,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/irak.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/irak.html"
         }
       },
       "JAM": {
         "country": "Jamaïque",
         "debtor": {
-          "apd": 9847184.91,
-          "napd": 2562978.43,
-          "total": 12410163.34,
+          "apd": 15140090.79,
+          "napd": 2381438.79,
+          "total": 17521529.58,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/jamaique.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/jamaique.html"
         }
       },
       "JOR": {
         "country": "Jordanie",
         "debtor": {
-          "apd": 3512651933.14,
-          "napd": 36434938.27,
-          "total": 3549086871.41,
+          "apd": 4021127962,
+          "napd": 40612467.59,
+          "total": 4061740429.59,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/jordanie.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/jordanie.html"
         }
       },
       "KAZ": {
         "country": "Kazakhstan",
         "debtor": {
-          "apd": 163000000,
+          "apd": 136670099.8,
           "napd": 0,
-          "total": 163000000,
+          "total": 136670099.8,
           "type": "encours",
           "url": null
         }
@@ -644,49 +650,49 @@
       "KEN": {
         "country": "Kenya",
         "debtor": {
-          "apd": 2532087545.15,
-          "napd": 260771578.89,
-          "total": 2792859124.04,
+          "apd": 2771395323,
+          "napd": 288995532.4,
+          "total": 3060390855.4,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/kenya.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/kenya.html"
         }
       },
       "KGZ": {
         "country": "Kirghizstan",
         "debtor": {
-          "apd": 216979480.64,
-          "napd": 21091087.85,
-          "total": 238070568.49,
+          "apd": 222133958,
+          "napd": 3813182.46,
+          "total": 225947140.46,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/kirghizie.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/kirghizie.html"
         }
       },
       "KHM": {
         "country": "Cambodge",
         "debtor": {
-          "apd": 2913917822.3,
-          "napd": 1416759448.2,
-          "total": 4330677270.5,
+          "apd": 3179629128,
+          "napd": 1417056928,
+          "total": 4596686056,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/cambodge.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/cambodge.html"
         }
       },
       "KNA": {
         "country": "Saint-Christophe-et-Niévès",
         "debtor": {
-          "apd": 1400000,
+          "apd": 1275085.09,
           "napd": 0,
-          "total": 1400000,
+          "total": 1275085.09,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/saint-christophe-et-nieves.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/saint-christophe-et-nieves.html"
         }
       },
       "LAO": {
         "country": "Laos",
         "debtor": {
-          "apd": 455000000,
-          "napd": 203000000,
-          "total": 658000000,
+          "apd": 498052606.5,
+          "napd": 187279971.6,
+          "total": 685332578.1,
           "type": "encours",
           "url": null
         }
@@ -694,9 +700,9 @@
       "LBN": {
         "country": "Liban",
         "debtor": {
-          "apd": 150000000,
+          "apd": 142877470.5,
           "napd": 0,
-          "total": 150000000,
+          "total": 142877470.5,
           "type": "encours",
           "url": null
         }
@@ -705,18 +711,18 @@
         "country": "Libéria",
         "debtor": {
           "apd": 0,
-          "napd": 1762838.62,
-          "total": 1762838.62,
+          "napd": 28768597.77,
+          "total": 28768597.77,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/liberia.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/liberia.html"
         }
       },
       "LBY": {
         "country": "Libye",
         "debtor": {
           "apd": 0,
-          "napd": 4778000000,
-          "total": 4778000000,
+          "napd": 4841592046,
+          "total": 4841592046,
           "type": "encours",
           "url": null
         }
@@ -724,141 +730,141 @@
       "LCA": {
         "country": "Sainte-Lucie",
         "debtor": {
-          "apd": 453953.34,
+          "apd": 326457.9,
           "napd": 0,
-          "total": 453953.34,
+          "total": 326457.9,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/sainte-lucie.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/sainte-lucie.html"
         }
       },
       "LKA": {
         "country": "Sri Lanka",
         "debtor": {
-          "apd": 3378034870.77,
-          "napd": 1192584890.32,
-          "total": 4570619761.09,
+          "apd": 3455164982,
+          "napd": 1458604746,
+          "total": 4913769728,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/sri-lanka.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/sri-lanka.html"
         }
       },
       "LSO": {
         "country": "Lesotho",
         "debtor": {
-          "apd": 2259825.87,
+          "apd": 2229475.51,
           "napd": 0,
-          "total": 2259825.87,
+          "total": 2229475.51,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/lesotho.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/lesotho.html"
         }
       },
       "MAR": {
         "country": "Maroc",
         "debtor": {
-          "apd": 6391275188.36,
-          "napd": 302149634.72,
-          "total": 6693424823.08,
+          "apd": 7645495248,
+          "napd": 611399949.7,
+          "total": 8256895197.7,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/maroc.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/maroc.html"
         },
         "creditor": {
           "nbAccords": 5,
           "statut": "Ad hoc",
           "premiereParticipation": 1986,
-          "url": null
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-creanciers/par-pays-crediteurs/maroc.html"
         }
       },
       "MDA": {
         "country": "Moldavie",
         "debtor": {
-          "apd": 364194425.75,
+          "apd": 467601966.2,
           "napd": 14596515.91,
-          "total": 378790941.66,
+          "total": 482198482.11,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/moldavie.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/moldavie.html"
         }
       },
       "MDG": {
         "country": "Madagascar",
         "debtor": {
-          "apd": 400531827.67,
-          "napd": 8891592.66,
-          "total": 409423420.33,
+          "apd": 434766203.4,
+          "napd": 30079288.27,
+          "total": 464845491.67,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/madagascar.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/madagascar.html"
         }
       },
       "MDV": {
         "country": "Maldives",
         "debtor": {
-          "apd": 48346569.13,
+          "apd": 43106994.26,
           "napd": 0,
-          "total": 48346569.13,
+          "total": 43106994.26,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/maldives.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/maldives.html"
         }
       },
       "MEX": {
         "country": "Mexique",
         "debtor": {
-          "apd": 2585215344.03,
-          "napd": 0,
-          "total": 2585215344.03,
+          "apd": 2788548716,
+          "napd": 470000,
+          "total": 2789018716,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/mexique.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/mexique.html"
         },
         "creditor": {
           "nbAccords": 2,
           "statut": "Ad hoc",
           "premiereParticipation": 1983,
-          "url": null
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-creanciers/par-pays-crediteurs/mexique.html"
         }
       },
       "MKD": {
         "country": "Macédoine du Nord",
         "debtor": {
-          "apd": 155376329.02,
+          "apd": 176347176,
           "napd": 0,
-          "total": 155376329.02,
+          "total": 176347176,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/macedoine-du-nord.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/macedoine-du-nord.html"
         }
       },
       "MLI": {
         "country": "Mali",
         "debtor": {
-          "apd": 273650337.47,
-          "napd": 37597450.76,
-          "total": 311247788.23,
+          "apd": 296644487.8,
+          "napd": 42909106.72,
+          "total": 339553594.52,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/mali.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/mali.html"
         }
       },
       "MMR": {
         "country": "Myanmar",
         "debtor": {
-          "apd": 4060807756.85,
-          "napd": 748411534.8,
-          "total": 4809219291.65,
+          "apd": 4247503100,
+          "napd": 839252214.6,
+          "total": 5086755314.6,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/myanmar.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/myanmar.html"
         }
       },
       "MNE": {
         "country": "Monténégro",
         "debtor": {
-          "apd": 109831517.77,
-          "napd": 30508969.7,
-          "total": 140340487.47,
+          "apd": 123625826.1,
+          "napd": 31550656.63,
+          "total": 155176482.73,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/montenegro.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/montenegro.html"
         }
       },
       "MNG": {
         "country": "Mongolie",
         "debtor": {
-          "apd": 1345000000,
+          "apd": 1417609487,
           "napd": 0,
-          "total": 1345000000,
+          "total": 1417609487,
           "type": "encours",
           "url": null
         }
@@ -866,29 +872,29 @@
       "MOZ": {
         "country": "Mozambique",
         "debtor": {
-          "apd": 840620518.92,
-          "napd": 290720467.58,
-          "total": 1131340986.5,
+          "apd": 874898256.9,
+          "napd": 302620600.5,
+          "total": 1177518857.4,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/mozambique.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/mozambique.html"
         }
       },
       "MRT": {
         "country": "Mauritanie",
         "debtor": {
-          "apd": 78081951.25,
-          "napd": 49258602.26,
-          "total": 127340553.51,
+          "apd": 76914958.73,
+          "napd": 49180000,
+          "total": 126094958.73,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/mauritanie.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/mauritanie.html"
         }
       },
       "MUS": {
         "country": "Maurice",
         "debtor": {
-          "apd": 695000000,
+          "apd": 785501593.9,
           "napd": 0,
-          "total": 695000000,
+          "total": 785501593.9,
           "type": "encours",
           "url": null
         }
@@ -896,19 +902,19 @@
       "MWI": {
         "country": "Malawi",
         "debtor": {
-          "apd": 897955.2,
+          "apd": 818975,
           "napd": 0,
-          "total": 897955.2,
+          "total": 818975,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/malawi.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/malawi.html"
         }
       },
       "MYS": {
         "country": "Malaisie",
         "debtor": {
-          "apd": 967000000,
-          "napd": 0,
-          "total": 967000000,
+          "apd": 909121022.3,
+          "napd": 9646401.78,
+          "total": 918767424.08,
           "type": "encours",
           "url": null
         }
@@ -916,9 +922,9 @@
       "NAM": {
         "country": "Namibie",
         "debtor": {
-          "apd": 249000000,
-          "napd": 16000000,
-          "total": 265000000,
+          "apd": 293782517.3,
+          "napd": 18234257.66,
+          "total": 312016774.96,
           "type": "encours",
           "url": null
         }
@@ -926,49 +932,49 @@
       "NER": {
         "country": "Niger",
         "debtor": {
-          "apd": 244264140.66,
+          "apd": 257716169.3,
           "napd": 0,
-          "total": 244264140.66,
+          "total": 257716169.3,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/niger.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/niger.html"
         }
       },
       "NGA": {
         "country": "Nigéria",
         "debtor": {
-          "apd": 918975403.9,
-          "napd": 43442740,
-          "total": 962418143.9,
+          "apd": 1206116141,
+          "napd": 49526250.01,
+          "total": 1255642391.01,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/nigeria.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/nigeria.html"
         }
       },
       "NIC": {
         "country": "Nicaragua",
         "debtor": {
-          "apd": 365108210.18,
-          "napd": 26787714.49,
-          "total": 391895924.67,
+          "apd": 379142039.1,
+          "napd": 26787714.5,
+          "total": 405929753.6,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/nicaragua.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/nicaragua.html"
         }
       },
       "NPL": {
         "country": "Népal",
         "debtor": {
-          "apd": 427217305.82,
+          "apd": 443058482.6,
           "napd": 0,
-          "total": 427217305.82,
+          "total": 443058482.6,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/nepal.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/nepal.html"
         }
       },
       "OMN": {
         "country": "Oman",
         "debtor": {
           "apd": 0,
-          "napd": 46000000,
-          "total": 46000000,
+          "napd": 15290000,
+          "total": 15290000,
           "type": "encours",
           "url": null
         }
@@ -976,49 +982,49 @@
       "PAK": {
         "country": "Pakistan",
         "debtor": {
-          "apd": 5448285225.22,
-          "napd": 328595341.74,
-          "total": 5776880566.96,
+          "apd": 5496891552,
+          "napd": 215617609.1,
+          "total": 5712509161.1,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/pakistan.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/pakistan.html"
         }
       },
       "PAN": {
         "country": "Panama",
         "debtor": {
-          "apd": 628146759.93,
-          "napd": 402143785.29,
-          "total": 1030290545.22,
+          "apd": 614719781.6,
+          "napd": 457676112,
+          "total": 1072395893.6,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/panama.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/panama.html"
         }
       },
       "PER": {
         "country": "Pérou",
         "debtor": {
-          "apd": 1516349604.86,
-          "napd": 21046000,
-          "total": 1537395604.86,
+          "apd": 1646498263,
+          "napd": 67503747.35,
+          "total": 1714002010.35,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/perou.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/perou.html"
         }
       },
       "PHL": {
         "country": "Philippines",
         "debtor": {
-          "apd": 9543418793.6,
+          "apd": 10946345743,
           "napd": 0,
-          "total": 9543418793.6,
+          "total": 10946345743,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/philippines.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/philippines.html"
         }
       },
       "PLW": {
         "country": "Palaos",
         "debtor": {
           "apd": 0,
-          "napd": 6000000,
-          "total": 6000000,
+          "napd": 5134204,
+          "total": 5134204,
           "type": "encours",
           "url": null
         }
@@ -1026,29 +1032,29 @@
       "PNG": {
         "country": "Papouasie-Nouvelle-Guinée",
         "debtor": {
-          "apd": 462239882.76,
-          "napd": 1859600175.11,
-          "total": 2321840057.87,
+          "apd": 441515290.6,
+          "napd": 1953088327,
+          "total": 2394603617.6,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/papouasie-nouvelle-guinee.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/papouasie-nouvelle-guinee.html"
         }
       },
       "POL": {
         "country": "Pologne",
         "debtor": {
-          "apd": 0,
-          "napd": 3648861319.8,
-          "total": 3648861319.8,
+          "apd": 2309604211,
+          "napd": 4547144181,
+          "total": 6856748392,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/pologne.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/pologne.html"
         }
       },
       "PRK": {
         "country": "République populaire démocratique de Corée",
         "debtor": {
-          "apd": 53000000,
-          "napd": 1887000000,
-          "total": 1940000000,
+          "apd": 53385860.52,
+          "napd": 2019142839,
+          "total": 2072528699.52,
           "type": "encours",
           "url": null
         }
@@ -1056,9 +1062,9 @@
       "PRY": {
         "country": "Paraguay",
         "debtor": {
-          "apd": 260000000,
-          "napd": 26000000,
-          "total": 286000000,
+          "apd": 282351903.1,
+          "napd": 29257500,
+          "total": 311609403.1,
           "type": "encours",
           "url": null
         }
@@ -1066,125 +1072,125 @@
       "ROU": {
         "country": "Roumanie",
         "debtor": {
-          "apd": 248958899.37,
+          "apd": 334812684,
           "napd": 0,
-          "total": 248958899.37,
+          "total": 334812684,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/roumanie.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/roumanie.html"
         }
       },
       "RWA": {
         "country": "Rwanda",
         "debtor": {
-          "apd": 468000000,
-          "napd": 13000000,
-          "total": 481000000,
+          "apd": 657182513.3,
+          "napd": 7378862.08,
+          "total": 664561375.38,
           "type": "encours",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/rwanda.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/rwanda.html"
         }
       },
       "SAU": {
         "country": "Arabie saoudite",
         "debtor": {
           "apd": 0,
-          "napd": 517000000,
-          "total": 517000000,
+          "napd": 372178671.5,
+          "total": 372178671.5,
           "type": "encours",
           "url": null
         },
         "creditor": {
-          "nbAccords": 3,
+          "nbAccords": 4,
           "statut": "Ad hoc",
           "premiereParticipation": 2022,
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par-pays-crediteurs/arabie-saoudite.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-creanciers/par-pays-crediteurs/arabie-saoudite.html"
         }
       },
       "SDN": {
         "country": "Soudan",
         "debtor": {
-          "apd": 1007956745.67,
-          "napd": 3155406689.19,
-          "total": 4163363434.86,
+          "apd": 1347550449,
+          "napd": 3227294046,
+          "total": 4574844495,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/soudan.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/soudan.html"
         }
       },
       "SEN": {
         "country": "Sénégal",
         "debtor": {
-          "apd": 1827142215.91,
-          "napd": 737179101.12,
-          "total": 2564321317.03,
+          "apd": 2141823785,
+          "napd": 1191372788,
+          "total": 3333196573,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/senegal.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/senegal.html"
         }
       },
       "SLE": {
         "country": "Sierra Leone",
         "debtor": {
-          "apd": 42550975.66,
+          "apd": 43004823.33,
           "napd": 0,
-          "total": 42550975.66,
+          "total": 43004823.33,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/sierra-leone.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/sierra-leone.html"
         }
       },
       "SLV": {
         "country": "Salvador",
         "debtor": {
-          "apd": 421964520.88,
-          "napd": 1510000,
-          "total": 423474520.88,
+          "apd": 454511768.3,
+          "napd": 110000,
+          "total": 454621768.3,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/el-salvador.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/el-salvador.html"
         }
       },
       "SOM": {
         "country": "Somalie",
         "debtor": {
-          "apd": 452108590.95,
-          "napd": 463570516.81,
-          "total": 915679107.76,
+          "apd": 41334018.82,
+          "napd": 5418024.32,
+          "total": 46752043.14,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/somalie.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/somalie.html"
         }
       },
       "SRB": {
         "country": "Serbie",
         "debtor": {
-          "apd": 691990761.43,
-          "napd": 878110030.13,
-          "total": 1570100791.56,
+          "apd": 1099676858,
+          "napd": 872611935.2,
+          "total": 1972288793.2,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/serbie.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/serbie.html"
         }
       },
       "STP": {
         "country": "Sao Tomé-et-Principe",
         "debtor": {
-          "apd": 960313.2,
-          "napd": 16360771,
-          "total": 17321084.2,
+          "apd": 905925,
+          "napd": 18070000,
+          "total": 18975925,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/sao-tome-et-principe.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/sao-tome-et-principe.html"
         }
       },
       "SUR": {
         "country": "Suriname",
         "debtor": {
-          "apd": 26802702.6,
-          "napd": 45226529.68,
-          "total": 72029232.28,
+          "apd": 30717330.36,
+          "napd": 46290274.37,
+          "total": 77007604.73,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/suriname.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/suriname.html"
         }
       },
       "SVK": {
         "country": "Slovaquie",
         "debtor": {
-          "apd": 1000000,
+          "apd": 976007.68,
           "napd": 0,
-          "total": 1000000,
+          "total": 976007.68,
           "type": "encours",
           "url": null
         }
@@ -1192,9 +1198,9 @@
       "SWZ": {
         "country": "Eswatini",
         "debtor": {
-          "apd": 20000000,
-          "napd": 1000000,
-          "total": 21000000,
+          "apd": 19258797.18,
+          "napd": 473000,
+          "total": 19731797.18,
           "type": "encours",
           "url": null
         }
@@ -1202,19 +1208,19 @@
       "SYC": {
         "country": "Seychelles",
         "debtor": {
-          "apd": 22529616.97,
-          "napd": 10407881.22,
-          "total": 32937498.19,
+          "apd": 19556122.02,
+          "napd": 7889024.46,
+          "total": 27445146.48,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/seychelles.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/seychelles.html"
         }
       },
       "SYR": {
         "country": "Syrie",
         "debtor": {
-          "apd": 861000000,
-          "napd": 248000000,
-          "total": 1109000000,
+          "apd": 889493803.1,
+          "napd": 249288000,
+          "total": 1138781803.1,
           "type": "encours",
           "url": null
         }
@@ -1222,29 +1228,29 @@
       "TCD": {
         "country": "Tchad",
         "debtor": {
-          "apd": 98806566.73,
-          "napd": 15679987.11,
-          "total": 114486553.84,
+          "apd": 103082111.8,
+          "napd": 17848933.83,
+          "total": 120931045.63,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/tchad.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/tchad.html"
         }
       },
       "TGO": {
         "country": "Togo",
         "debtor": {
-          "apd": 78440297.07,
-          "napd": 128332180.83,
-          "total": 206772477.9,
+          "apd": 103918250.6,
+          "napd": 124848281.2,
+          "total": 228766531.8,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/togo.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/togo.html"
         }
       },
       "THA": {
         "country": "Thaïlande",
         "debtor": {
-          "apd": 1796000000,
-          "napd": 111000000,
-          "total": 1907000000,
+          "apd": 1630401539,
+          "napd": 106281874.9,
+          "total": 1736683413.9,
           "type": "encours",
           "url": null
         }
@@ -1252,19 +1258,19 @@
       "TJK": {
         "country": "Tadjikistan",
         "debtor": {
-          "apd": 35447209.34,
-          "napd": 292429127.51,
-          "total": 327876336.85,
+          "apd": 39362499.98,
+          "napd": 292429127.5,
+          "total": 331791627.48,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/tadjikistan.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/tadjikistan.html"
         }
       },
       "TKM": {
         "country": "Turkménistan",
         "debtor": {
-          "apd": 4000000,
-          "napd": 926000000,
-          "total": 930000000,
+          "apd": 2794881.64,
+          "napd": 673389213,
+          "total": 676184094.64,
           "type": "encours",
           "url": null
         }
@@ -1272,9 +1278,9 @@
       "TLS": {
         "country": "Timor oriental",
         "debtor": {
-          "apd": 23000000,
+          "apd": 22050479.85,
           "napd": 0,
-          "total": 23000000,
+          "total": 22050479.85,
           "type": "encours",
           "url": null
         }
@@ -1283,24 +1289,24 @@
         "country": "Trinité-et-Tobago",
         "debtor": {
           "apd": 0,
-          "napd": 138676481,
-          "total": 138676481,
+          "napd": 121524593,
+          "total": 121524593,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/trinite-et-tobago.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/trinite-et-tobago.html"
         },
         "creditor": {
           "nbAccords": 3,
           "statut": "Ad hoc",
           "premiereParticipation": 1996,
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par-pays-crediteurs/trinite-tobaggo.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-creanciers/par-pays-crediteurs/trinite-tobaggo.html"
         }
       },
       "TUN": {
         "country": "Tunisie",
         "debtor": {
-          "apd": 3428000000,
-          "napd": 121000000,
-          "total": 3549000000,
+          "apd": 3796373207,
+          "napd": 28056658.28,
+          "total": 3824429865.28,
           "type": "encours",
           "url": null
         }
@@ -1308,55 +1314,55 @@
       "TUR": {
         "country": "Turquie",
         "debtor": {
-          "apd": 3603853710.85,
-          "napd": 686697202.36,
-          "total": 4290550913.21,
+          "apd": 4003783543,
+          "napd": 1408778275,
+          "total": 5412561818,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/turquie.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/turquie.html"
         },
         "creditor": {
-          "nbAccords": 6,
+          "nbAccords": 7,
           "statut": "Ad hoc",
           "premiereParticipation": 2001,
-          "url": null
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-creanciers/par-pays-crediteurs/turquie.html"
         }
       },
       "TZA": {
         "country": "Tanzanie",
         "debtor": {
-          "apd": 1211251062.35,
-          "napd": 368647454.99,
-          "total": 1579898517.34,
+          "apd": 1539618090,
+          "napd": 365241800.9,
+          "total": 1904859890.9,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/tanzanie.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/tanzanie.html"
         }
       },
       "UGA": {
         "country": "Ouganda",
         "debtor": {
-          "apd": 607000000,
-          "napd": 324000000,
-          "total": 931000000,
+          "apd": 726339969.3,
+          "napd": 527112066.2,
+          "total": 1253452035.5,
           "type": "encours",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/ouganda.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/ouganda.html"
         }
       },
       "UKR": {
         "country": "Ukraine",
         "debtor": {
-          "apd": 4750029245.9,
-          "napd": 4480813249.02,
-          "total": 9230842494.92,
+          "apd": 8413381927,
+          "napd": 4143856312,
+          "total": 12557238239,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/ukraine.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/ukraine.html"
         }
       },
       "URY": {
         "country": "Uruguay",
         "debtor": {
-          "apd": 26000000,
-          "napd": 0,
-          "total": 26000000,
+          "apd": 28769364.9,
+          "napd": 88705.59,
+          "total": 28858070.49,
           "type": "encours",
           "url": null
         }
@@ -1364,9 +1370,9 @@
       "UZB": {
         "country": "Ouzbékistan",
         "debtor": {
-          "apd": 3631000000,
-          "napd": 1315000000,
-          "total": 4946000000,
+          "apd": 4259672099,
+          "napd": 1427717274,
+          "total": 5687389373,
           "type": "encours",
           "url": null
         }
@@ -1374,19 +1380,19 @@
       "VCT": {
         "country": "Saint-Vincent-et-les-Grenadines",
         "debtor": {
-          "apd": 510000,
-          "napd": 2020000,
-          "total": 2530000,
+          "apd": 175458.16,
+          "napd": 1290000,
+          "total": 1465458.16,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/st-vincent.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/saint-vincent-et-les-grenadines.html"
         }
       },
       "VEN": {
         "country": "Venezuela",
         "debtor": {
-          "apd": 70000000,
-          "napd": 8621000000,
-          "total": 8691000000,
+          "apd": 67170535.56,
+          "napd": 8860144067,
+          "total": 8927314602.56,
           "type": "encours",
           "url": null
         }
@@ -1394,19 +1400,19 @@
       "VNM": {
         "country": "Vietnam",
         "debtor": {
-          "apd": 12593029864.31,
-          "napd": 864581967.62,
-          "total": 13457611831.93,
+          "apd": 12471554298,
+          "napd": 669304425,
+          "total": 13140858723,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/vietnam.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/vietnam.html"
         }
       },
       "VUT": {
         "country": "Vanuatu",
         "debtor": {
-          "apd": 39000000,
+          "apd": 36697696.74,
           "napd": 0,
-          "total": 39000000,
+          "total": 36697696.74,
           "type": "encours",
           "url": null
         }
@@ -1414,19 +1420,19 @@
       "WSM": {
         "country": "Samoa",
         "debtor": {
-          "apd": 17000000,
+          "apd": 15777297.49,
           "napd": 0,
-          "total": 17000000,
+          "total": 15777297.49,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/samoa.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/samoa.html"
         }
       },
       "XKX": {
         "country": "Kosovo",
         "debtor": {
-          "apd": 12000000,
+          "apd": 11663050,
           "napd": 0,
-          "total": 12000000,
+          "total": 11663050,
           "type": "encours",
           "url": null
         }
@@ -1434,45 +1440,45 @@
       "YEM": {
         "country": "Yémen",
         "debtor": {
-          "apd": 417080486.26,
-          "napd": 1232898678.02,
-          "total": 1649979164.28,
+          "apd": 432395320.9,
+          "napd": 1281613622,
+          "total": 1714008942.9,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/yemen.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/yemen.html"
         }
       },
       "ZAF": {
         "country": "Afrique du Sud",
         "debtor": {
-          "apd": 2190000000,
-          "napd": 141000000,
-          "total": 2331000000,
+          "apd": 2930104951,
+          "napd": 138939077.8,
+          "total": 3069044028.8,
           "type": "encours",
           "url": null
         },
         "creditor": {
-          "nbAccords": 10,
-          "statut": "Prospectif",
+          "nbAccords": 16,
+          "statut": "Prospectif (depuis 2022)",
           "premiereParticipation": 1984,
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par-pays-crediteurs/afrique-du-sud.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-creanciers/par-pays-crediteurs/afrique-du-sud.html"
         }
       },
       "ZMB": {
         "country": "Zambie",
         "debtor": {
-          "apd": 180305088.84,
-          "napd": 1507742187.02,
-          "total": 1688047275.86,
+          "apd": 191080522.8,
+          "napd": 1581573289,
+          "total": 1772653811.8,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par%20pays-debiteurs/zambie.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/zambie.html"
         }
       },
       "ZWE": {
         "country": "Zimbabwe",
         "debtor": {
-          "apd": 1007000000,
-          "napd": 772000000,
-          "total": 1779000000,
+          "apd": 1092432716,
+          "napd": 787822421.9,
+          "total": 1880255137.9,
           "type": "encours",
           "url": null
         }
@@ -1483,7 +1489,7 @@
           "nbAccords": 29,
           "statut": null,
           "premiereParticipation": 1966,
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par-pays-crediteurs/australie.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-creanciers/par-pays-crediteurs/australie.html"
         }
       },
       "AUT": {
@@ -1492,7 +1498,7 @@
           "nbAccords": 259,
           "statut": null,
           "premiereParticipation": 1956,
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par-pays-crediteurs/autriche.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-creanciers/par-pays-crediteurs/autriche.html"
         }
       },
       "BEL": {
@@ -1501,7 +1507,7 @@
           "nbAccords": 297,
           "statut": null,
           "premiereParticipation": 1956,
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par-pays-crediteurs/belgique.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-creanciers/par-pays-crediteurs/belgique.html"
         }
       },
       "BRA": {
@@ -1510,7 +1516,7 @@
           "nbAccords": 78,
           "statut": null,
           "premiereParticipation": 1985,
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par-pays-crediteurs/bresil.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-creanciers/par-pays-crediteurs/bresil.html"
         }
       },
       "CAN": {
@@ -1519,16 +1525,16 @@
           "nbAccords": 236,
           "statut": null,
           "premiereParticipation": 1965,
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par-pays-crediteurs/canada.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-creanciers/par-pays-crediteurs/canada.html"
         }
       },
       "CHE": {
         "country": "Suisse",
         "creditor": {
-          "nbAccords": 231,
+          "nbAccords": 232,
           "statut": null,
           "premiereParticipation": 1992,
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par-pays-crediteurs/suisse.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-creanciers/par-pays-crediteurs/suisse.html"
         }
       },
       "DEU": {
@@ -1537,16 +1543,16 @@
           "nbAccords": 380,
           "statut": null,
           "premiereParticipation": 1956,
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par-pays-crediteurs/allemagne.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-creanciers/par-pays-crediteurs/allemagne.html"
         }
       },
       "DNK": {
         "country": "Danemark",
         "creditor": {
-          "nbAccords": 164,
+          "nbAccords": 165,
           "statut": null,
           "premiereParticipation": 1956,
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par-pays-crediteurs/danemark.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-creanciers/par-pays-crediteurs/danemark.html"
         }
       },
       "ESP": {
@@ -1555,25 +1561,25 @@
           "nbAccords": 276,
           "statut": null,
           "premiereParticipation": 1965,
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par-pays-crediteurs/espagne.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-creanciers/par-pays-crediteurs/espagne.html"
         }
       },
       "FIN": {
         "country": "Finlande",
         "creditor": {
-          "nbAccords": 85,
+          "nbAccords": 86,
           "statut": null,
           "premiereParticipation": 1978,
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par-pays-crediteurs/finlande.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-creanciers/par-pays-crediteurs/finlande.html"
         }
       },
       "FRA": {
         "country": "France",
         "creditor": {
-          "nbAccords": 459,
+          "nbAccords": 460,
           "statut": null,
           "premiereParticipation": 1956,
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par-pays-crediteurs/france.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-creanciers/par-pays-crediteurs/france.html"
         }
       },
       "GBR": {
@@ -1582,7 +1588,7 @@
           "nbAccords": 375,
           "statut": null,
           "premiereParticipation": 1956,
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par-pays-crediteurs/royaume-uni.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-creanciers/par-pays-crediteurs/royaume-uni.html"
         }
       },
       "IRL": {
@@ -1591,43 +1597,43 @@
           "nbAccords": 4,
           "statut": null,
           "premiereParticipation": 1986,
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par-pays-crediteurs/irlande.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-creanciers/par-pays-crediteurs/irlande.html"
         }
       },
       "ISR": {
         "country": "Israël",
         "creditor": {
-          "nbAccords": 38,
+          "nbAccords": 39,
           "statut": null,
           "premiereParticipation": 1983,
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par-pays-crediteurs/israel.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-creanciers/par-pays-crediteurs/israel.html"
         }
       },
       "ITA": {
         "country": "Italie",
         "creditor": {
-          "nbAccords": 377,
+          "nbAccords": 378,
           "statut": null,
           "premiereParticipation": 1956,
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par-pays-crediteurs/italie.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-creanciers/par-pays-crediteurs/italie.html"
         }
       },
       "JPN": {
         "country": "Japon",
         "creditor": {
-          "nbAccords": 328,
+          "nbAccords": 329,
           "statut": null,
           "premiereParticipation": 1964,
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par-pays-crediteurs/japon.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-creanciers/par-pays-crediteurs/japon.html"
         }
       },
       "KOR": {
         "country": "République de Corée",
         "creditor": {
-          "nbAccords": 28,
+          "nbAccords": 29,
           "statut": null,
           "premiereParticipation": 1998,
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par-pays-crediteurs/republique-de-coree.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-creanciers/par-pays-crediteurs/republique-de-coree.html"
         }
       },
       "KWT": {
@@ -1636,7 +1642,7 @@
           "nbAccords": 8,
           "statut": "Ad hoc",
           "premiereParticipation": 1985,
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par-pays-crediteurs/koweit.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-creanciers/par-pays-crediteurs/koweit.html"
         }
       },
       "NLD": {
@@ -1645,7 +1651,7 @@
           "nbAccords": 297,
           "statut": null,
           "premiereParticipation": 1956,
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par-pays-crediteurs/pays-bas.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-creanciers/par-pays-crediteurs/pays-bas.html"
         }
       },
       "NOR": {
@@ -1654,7 +1660,7 @@
           "nbAccords": 154,
           "statut": null,
           "premiereParticipation": 1956,
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par-pays-crediteurs/norvege.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-creanciers/par-pays-crediteurs/norvege.html"
         }
       },
       "NZL": {
@@ -1663,7 +1669,7 @@
           "nbAccords": 7,
           "statut": "Ad hoc",
           "premiereParticipation": 1966,
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par-pays-crediteurs/nouvelle-zelande.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-creanciers/par-pays-crediteurs/nouvelle-zelande.html"
         }
       },
       "PRT": {
@@ -1672,7 +1678,7 @@
           "nbAccords": 19,
           "statut": "Ad hoc",
           "premiereParticipation": 1983,
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par-pays-crediteurs/portugal.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-creanciers/par-pays-crediteurs/portugal.html"
         }
       },
       "RUS": {
@@ -1681,16 +1687,16 @@
           "nbAccords": 89,
           "statut": null,
           "premiereParticipation": 1997,
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par-pays-crediteurs/federation-de-russie.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-creanciers/par-pays-crediteurs/federation-de-russie.html"
         }
       },
       "SWE": {
         "country": "Suède",
         "creditor": {
-          "nbAccords": 170,
+          "nbAccords": 171,
           "statut": null,
           "premiereParticipation": 1956,
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par-pays-crediteurs/suede.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-creanciers/par-pays-crediteurs/suede.html"
         }
       },
       "USA": {
@@ -1699,7 +1705,7 @@
           "nbAccords": 364,
           "statut": null,
           "premiereParticipation": 1964,
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/accords-signes-avec-le-club-de-p/par-pays-crediteurs/etats-unis-d-amerique.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-creanciers/par-pays-crediteurs/etats-unis-d-amerique.html"
         }
       },
       "ABW": {
@@ -1923,11 +1929,11 @@
       }
     },
     "totals": {
-      "debtorApd": 191476743121.15,
-      "debtorNapd": 128691077292.53,
-      "debtorTotal": 320167820413.68,
+      "debtorApd": 214696518286,
+      "debtorNapd": 128050712011.62,
+      "debtorTotal": 342747230297.62,
       "debtorCount": 141,
-      "creditorCount": 36
+      "creditorCount": 37
     }
   }
 }
