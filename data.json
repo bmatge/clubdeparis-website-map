@@ -224,7 +224,7 @@
         },
         "creditor": {
           "nbAccords": 4,
-          "statut": null,
+          "statut": "Ad hoc",
           "premiereParticipation": 2022,
           "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-creanciers/par-pays-crediteurs/chine.html"
         }
