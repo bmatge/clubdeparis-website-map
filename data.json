@@ -435,24 +435,24 @@
           "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/gabon.html"
         }
       },
-      "GEO": {
-        "country": "Géorgie",
+      "GMB": {
+        "country": "Gambie",
         "debtor": {
           "apd": 464125,
           "napd": 0,
           "total": 464125,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/georgie.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/gambie.html"
         }
       },
-      "GHA": {
-        "country": "Ghana",
+      "GEO": {
+        "country": "Géorgie",
         "debtor": {
           "apd": 1491778887,
           "napd": 98070397.56,
           "total": 1589849284.56,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/ghana.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/georgie.html"
         }
       },
       "GIN": {
@@ -465,14 +465,14 @@
           "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/guinee.html"
         }
       },
-      "GMB": {
-        "country": "Gambie",
+      "GHA": {
+        "country": "Ghana",
         "debtor": {
           "apd": 1189630940,
           "napd": 2661778058,
           "total": 3851408998,
           "type": "accord",
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/gambie.html"
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/ghana.html"
         }
       },
       "GNB": {
