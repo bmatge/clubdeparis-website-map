@@ -317,6 +317,14 @@ class ClubParisMap extends HTMLElement {
     return this._wbNames?.[iso] || iso;
   }
 
+  // Échappement HTML pour toute valeur dynamique injectée via innerHTML
+  // (noms de pays venant du topojson tiers, URLs venant des CSV).
+  _escapeHtml(s) {
+    return String(s).replace(/[&<>"']/g, (ch) => ({
+      '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;',
+    }[ch]));
+  }
+
   _isoToNameMap() {
     const out = {};
     const yd = this._getYearData();
@@ -330,6 +338,19 @@ class ClubParisMap extends HTMLElement {
       }
     }
     return out;
+  }
+
+  disconnectedCallback() {
+    // Cleanup des ressources attachées hors du shadow DOM. Le shadow DOM
+    // lui-même est détruit avec l'élément ; les listeners attachés sur ses
+    // descendants disparaissent avec eux, donc seuls les listeners globaux
+    // (document) et les Observers natifs nécessitent un cleanup explicite.
+    if (this._onDocClick) {
+      document.removeEventListener('click', this._onDocClick);
+      this._onDocClick = null;
+    }
+    this._resizeObserver?.disconnect();
+    this._resizeObserver = null;
   }
 
   connectedCallback() {
@@ -556,7 +577,7 @@ class ClubParisMap extends HTMLElement {
         searchDropdown.innerHTML = `<div class="search-no-result">${this._t('search.no_result')}</div>`;
       } else {
         searchDropdown.innerHTML = results.map((r, i) =>
-          `<div class="search-option" data-iso="${r.iso}" data-index="${i}">${r.highlighted}</div>`
+          `<div class="search-option" data-iso="${this._escapeHtml(r.iso)}" data-index="${i}">${r.highlighted}</div>`
         ).join('');
       }
       searchDropdown.classList.add('open');
@@ -600,11 +621,15 @@ class ClubParisMap extends HTMLElement {
       }
     });
 
-    document.addEventListener('click', (e) => {
-      if (!this.shadowRoot.getElementById('search-container').contains(e.composedPath()[0])) {
-        searchDropdown.classList.remove('open');
+    // Stocké comme propriété pour pouvoir le retirer dans disconnectedCallback.
+    this._onDocClick = (e) => {
+      const container = this.shadowRoot.getElementById('search-container');
+      const dropdown = this.shadowRoot.getElementById('search-dropdown');
+      if (container && dropdown && !container.contains(e.composedPath()[0])) {
+        dropdown.classList.remove('open');
       }
-    });
+    };
+    document.addEventListener('click', this._onDocClick);
   }
 
   /* SLIDER TEMPORAIREMENT DÉSACTIVÉ
@@ -1041,9 +1066,7 @@ class ClubParisMap extends HTMLElement {
     };
     const statusLabel = (s) => this._t(statusMap[s] ?? 'panel.status.permanent');
 
-    const escapeHtml = (s) => String(s).replace(/[&<>"']/g, (ch) => ({
-      '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;',
-    }[ch]));
+    const escapeHtml = (s) => this._escapeHtml(s);
 
     const linkCell = (url) => url
       ? `<a href="${escapeHtml(this._localizedUrl(url))}" target="_blank" rel="noopener">${this._t('info.link_open')}<span class="sr-only"> ${this._t('info.col_link')}</span></a>`
@@ -1202,9 +1225,10 @@ class ClubParisMap extends HTMLElement {
       const idx = nName.indexOf(nQuery);
       if (idx === -1) continue;
       const matchLen = nQuery.length;
-      const highlighted = name.substring(0, idx)
-        + '<span class="match">' + name.substring(idx, idx + matchLen) + '</span>'
-        + name.substring(idx + matchLen);
+      const esc = (s) => this._escapeHtml(s);
+      const highlighted = esc(name.substring(0, idx))
+        + '<span class="match">' + esc(name.substring(idx, idx + matchLen)) + '</span>'
+        + esc(name.substring(idx + matchLen));
       results.push({ iso, name, highlighted, startsWithMatch: idx === 0 });
     }
     results.sort((a, b) => {
@@ -1278,7 +1302,7 @@ class ClubParisMap extends HTMLElement {
     const isDebtor = c.debtor && c.debtor.total > 0;
     const isCreditor = !!c.creditor;
 
-    let html = `<h2 class="panel-title">${name}</h2>`;
+    let html = `<h2 class="panel-title">${this._escapeHtml(name)}</h2>`;
 
     if (!isDebtor && !isCreditor) {
       html += `<p class="no-data">${this._t('map.no_data')}</p>`;
@@ -1308,7 +1332,7 @@ class ClubParisMap extends HTMLElement {
       if (cr.premiereParticipation) html += `<li><span class="detail-label">${this._t('panel.member_since')}</span><span class="detail-value">${cr.premiereParticipation}</span></li>`;
       html += `</ul>`;
       if (cr.url) {
-        html += `<a class="panel-cta panel-cta-creditor" href="${this._localizedUrl(cr.url)}" target="_blank" rel="noopener">${this._t('panel.creditor_link')}</a>`;
+        html += `<a class="panel-cta panel-cta-creditor" href="${this._escapeHtml(this._localizedUrl(cr.url))}" target="_blank" rel="noopener">${this._t('panel.creditor_link')}</a>`;
       }
     }
 
@@ -1336,7 +1360,7 @@ class ClubParisMap extends HTMLElement {
         </div>
       `;
       if (d.url) {
-        html += `<a class="panel-cta" href="${this._localizedUrl(d.url)}" target="_blank" rel="noopener">${this._t('panel.debtor_link')}</a>`;
+        html += `<a class="panel-cta" href="${this._escapeHtml(this._localizedUrl(d.url))}" target="_blank" rel="noopener">${this._t('panel.debtor_link')}</a>`;
       }
     }
 
