@@ -1525,6 +1525,16 @@
           "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-creanciers/par-pays-crediteurs/federation-de-russie.html"
         }
       },
+      "HTI": {
+        "country": "Haïti",
+        "debtor": {
+          "apd": 0,
+          "napd": 0,
+          "total": 0,
+          "type": "accord",
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/haiti.html"
+        }
+      },
       "AUS": {
         "country": "Australie",
         "creditor": {
@@ -1819,9 +1829,6 @@
       "HMD": {
         "country": "Îles Heard-et-MacDonald (Aus.)"
       },
-      "HTI": {
-        "country": "Haïti"
-      },
       "IMN": {
         "country": "Île de Man (R.-U.)"
       },
@@ -1953,7 +1960,7 @@
       "debtorApd": 214696518286,
       "debtorNapd": 128050712011.62,
       "debtorTotal": 342747230297.62,
-      "debtorCount": 144,
+      "debtorCount": 145,
       "creditorCount": 37
     }
   }
