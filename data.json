@@ -1509,6 +1509,22 @@
           "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-creanciers/par-pays-crediteurs/bresil.html"
         }
       },
+      "RUS": {
+        "country": "Fédération de Russie",
+        "debtor": {
+          "apd": 0,
+          "napd": 0,
+          "total": 0,
+          "type": "accord",
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-debiteurs/par%20pays-debiteurs/federation-de-russie.html"
+        },
+        "creditor": {
+          "nbAccords": 89,
+          "statut": null,
+          "premiereParticipation": 1997,
+          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-creanciers/par-pays-crediteurs/federation-de-russie.html"
+        }
+      },
       "AUS": {
         "country": "Australie",
         "creditor": {
@@ -1696,15 +1712,6 @@
           "statut": "Ad hoc",
           "premiereParticipation": 1983,
           "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-creanciers/par-pays-crediteurs/portugal.html"
-        }
-      },
-      "RUS": {
-        "country": "Fédération de Russie",
-        "creditor": {
-          "nbAccords": 89,
-          "statut": null,
-          "premiereParticipation": 1997,
-          "url": "https://clubdeparis.org/sites/clubdeparis/accueil/pays-accords-signes/sommaire-pays-creanciers/par-pays-crediteurs/federation-de-russie.html"
         }
       },
       "SWE": {
@@ -1946,7 +1953,7 @@
       "debtorApd": 214696518286,
       "debtorNapd": 128050712011.62,
       "debtorTotal": 342747230297.62,
-      "debtorCount": 143,
+      "debtorCount": 144,
       "creditorCount": 37
     }
   }
